@@ -1,11 +1,11 @@
 # encoding: utf-8
 #
 # 卿雲爛兮·陸繁
-# 版本: 20231207
+# 版本: 20231208
 #
 ---
 name: "yujoy_tc"
-version: "20231207"
+version: "20231208"
 sort: original
 import_tables:
   - yuhao/yujoy_tc.quick
