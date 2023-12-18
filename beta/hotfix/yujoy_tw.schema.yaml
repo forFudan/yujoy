@@ -3,14 +3,14 @@
 
 schema:
   schema_id: yujoy_tw
-  name: 宇浩·卿雲·臺灣正體
+  name: 卿雲·臺正
   version: 20231001
   author:
     - 發明人 朱宇浩
     - Rime方案 <https://zhuyuhao.com/yujoy/>
     - 官方QQ群 735728797
   description: |
-    宇浩·卿雲，繁簡通打，以臺灣傳統漢字爲主設置簡碼。
+    卿雲，繁簡通打，以臺灣傳統漢字爲主設置簡碼。
   dependencies:
     - yuhao_pinyin
     - yujoy_chaifen_tw

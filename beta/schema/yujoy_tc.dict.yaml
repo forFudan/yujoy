@@ -1,16 +1,15 @@
 # encoding: utf-8
 #
-# 卿雲爛兮·陸繁
-# 版本: 20231208
+# 宇浩·卿雲·陸繁
+# 版本: 20231219
 #
 ---
 name: "yujoy_tc"
-version: "20231208"
+version: "20231219"
 sort: original
 import_tables:
   - yuhao/yujoy_tc.quick
   - yuhao/yujoy.full
-  - yuhao/yujoy_tc.short
   - yuhao/yuhao.private
   - yuhao/yujoy_tc.words
   - yuhao/yujoy_tc.words_literature

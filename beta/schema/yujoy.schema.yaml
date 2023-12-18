@@ -3,7 +3,7 @@
 
 schema:
   schema_id: yujoy
-  name: 卿雲爛兮·繁簡平衡
+  name: 卿雲·通打
   version: 20231001
   author:
     - 發明人 朱宇浩
@@ -11,11 +11,7 @@ schema:
     - 官方QQ群 735728797
   description: |
     卿雲爛兮·繁簡平衡，簡碼設置適合主單副詞的繁簡通打派.
-    只設置少量一簡字詞、二簡字詞和避重三簡字 600 餘個:
-      - 一簡字詞是繁/簡方案共用的字詞,加上「這这爲」三字
-      - 二簡字詞是繁/簡方案共用的字詞
-      - 三簡字詞只用於避重.出簡後,動態重碼率低於 0.005%.
-    可以在 yujoy.dict.yaml 文件中手動開啓詞庫。
+    可以在 yujoy.dict.yaml 文件中手動開啓詞庫.
   dependencies:
     - yuhao_pinyin
     - yujoy_chaifen
@@ -26,7 +22,7 @@ switches:
       - yuhao_char_first
       - cjk
     states: [只出常用字, 常用字前置, 全字集原排序]
-    reset: 2
+    reset: 1
     # Control+Shift+O: 只出常用字
   - name: yuhao_postpone_full_code
     reset: 0
@@ -266,7 +262,7 @@ recognizer:
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
 
 style:
-  horizontal: true
+  horizontal: false
   inline_preedit: true
   preedit_type: preview
 # menu:

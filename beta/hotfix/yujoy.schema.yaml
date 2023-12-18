@@ -3,14 +3,14 @@
 
 schema:
   schema_id: yujoy
-  name: 宇浩·卿雲
+  name: 卿雲·通打
   version: 20231001
   author:
     - 發明人 朱宇浩
     - Rime方案 <https://zhuyuhao.com/yujoy/>
     - 官方QQ群 735728797
   description: |
-    宇浩·星陈，繁简通打。
+    卿雲，繁简通打。
     只設置少量一簡字詞、二簡字詞和避重三簡字。
   dependencies:
     - yuhao_pinyin

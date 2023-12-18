@@ -3,14 +3,14 @@
 
 schema:
   schema_id: yujoy_sc
-  name: 宇浩·星陈·大陆简体
+  name: 卿雲·陆简
   version: 20231001
   author:
     - 發明人 朱宇浩
     - Rime方案 <https://zhuyuhao.com/yujoy/>
     - 官方QQ群 735728797
   description: |
-    宇浩·星陈，繁简通打，以简化汉字为主设置简码。
+    卿雲，繁简通打，以简化汉字为主设置简码。
   dependencies:
     - yuhao_pinyin
     - yujoy_chaifen
