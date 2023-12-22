@@ -1,11 +1,11 @@
 # encoding: utf-8
 #
 # 宇浩·卿雲·陆简
-# 版本: 20231219
+# 版本: 20231222
 #
 ---
 name: "yujoy_sc"
-version: "20231219"
+version: "20231222"
 sort: original
 import_tables:
   - yuhao/yujoy_sc.quick

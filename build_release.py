@@ -10,7 +10,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.0-alpha"
+version = "v3.4.0-alpha-1"
 
 # %%
 try:
@@ -46,10 +46,11 @@ for file_name in [
     copyfile(f"../yuhao/beta/schema/{file_name}", f"./dist/yujoy/schema/{file_name}")
 
 # %%
-shutil.make_archive(f"./dist/yuhao_joy_{version}", "zip", "./dist/yujoy")
+# shutil.make_archive(f"./dist/yuhao_joy_{version}", "zip", "./dist/yujoy")
+shutil.make_archive(f"./dist/卿雲爛兮_{version}", "zip", "./dist/yujoy")
 # %%
-copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/yuhao_joy_{version}.zip")
-copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/卿雲_{version}.zip")
+# copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/yuhao_joy_{version}.zip")
+# copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/卿雲爛兮_{version}.zip")
 # %%
 # %%
 # Remove unrelated files
