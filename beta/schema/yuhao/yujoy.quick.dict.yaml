@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.quick"
-version: "20231222"
+version: "20231224"
 sort: original
 columns:
   - text
@@ -16,7 +16,7 @@ columns:
 一	f
 怎	g
 地	h
-家	i
+小	i
 是	j
 中	k
 了	l
@@ -106,7 +106,7 @@ columns:
 過	cu
 頂	cv
 谚	cw
-丅	cx
+下	cx
 自	cz
 通	da
 白	db
@@ -167,6 +167,7 @@ columns:
 非	ff
 辈	fg
 于	fh
+一	fi
 九	fj
 頭	fk
 攝	fl
@@ -245,7 +246,7 @@ columns:
 尘	ih
 為	ii
 臼	ij
-句	ik
+家	ik
 字	il
 尖	im
 密	in
@@ -322,6 +323,7 @@ columns:
 酉	li
 弟	lj
 总	lk
+了	ll
 关	lm
 酬	ln
 豫	lo
@@ -362,6 +364,7 @@ columns:
 髮	mx
 鹌	my
 汗	na
+不	nb
 齒	nc
 治	nd
 波	ne
@@ -404,7 +407,7 @@ columns:
 具	op
 且	oq
 续	or
-巳	os
+上	os
 故	ot
 進	ou
 魚	ov
@@ -430,6 +433,7 @@ columns:
 質	pp
 制	pq
 质	pr
+生	ps
 降	pt
 近	pu
 隱	pv
@@ -554,6 +558,7 @@ columns:
 組	uo
 介	up
 綠	uq
+人	ur
 身	us
 終	ut
 从	uu

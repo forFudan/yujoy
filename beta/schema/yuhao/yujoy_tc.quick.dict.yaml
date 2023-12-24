@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_tc.quick"
-version: "20231222"
+version: "20231224"
 sort: original
 columns:
   - text
@@ -16,7 +16,7 @@ columns:
 一	f
 怎	g
 地	h
-家	i
+小	i
 是	j
 中	k
 了	l
@@ -41,7 +41,7 @@ columns:
 一定	f
 怎麽	g
 地方	h
-家庭	i
+小時	i
 是否	j
 中國	k
 着力	m
@@ -130,7 +130,7 @@ columns:
 過	cu
 頂	cv
 谚	cw
-丅	cx
+下	cx
 自	cz
 通	da
 白	db
@@ -191,6 +191,7 @@ columns:
 非	ff
 撫	fg
 持	fh
+一	fi
 九	fj
 頭	fk
 攝	fl
@@ -269,7 +270,7 @@ columns:
 周	ih
 為	ii
 臼	ij
-句	ik
+家	ik
 字	il
 尖	im
 密	in
@@ -346,6 +347,7 @@ columns:
 酉	li
 聯	lj
 聖	lk
+了	ll
 耿	lm
 酬	ln
 豫	lo
@@ -386,6 +388,7 @@ columns:
 髮	mx
 鹌	my
 汗	na
+不	nb
 齒	nc
 滿	nd
 波	ne
@@ -428,7 +431,7 @@ columns:
 具	op
 且	oq
 航	or
-巳	os
+上	os
 故	ot
 進	ou
 魚	ov
@@ -454,6 +457,7 @@ columns:
 質	pp
 制	pq
 盾	pr
+生	ps
 降	pt
 近	pu
 隱	pv
@@ -578,6 +582,7 @@ columns:
 組	uo
 紛	up
 綠	uq
+人	ur
 身	us
 終	ut
 座	uu
@@ -739,6 +744,7 @@ columns:
 示範	cs
 過去	cu
 頂替	cv
+下去	cx
 自己	cz
 通過	da
 白銀	db
@@ -790,6 +796,7 @@ columns:
 非常	ff
 撫養	fg
 持續	fh
+一定	fi
 九月	fj
 頭髮	fk
 攝影	fl
@@ -852,7 +859,7 @@ columns:
 兒子	ie
 方面	if
 周圍	ih
-句號	ik
+家庭	ik
 字樣	il
 尖鋭	im
 密集	in
@@ -936,6 +943,7 @@ columns:
 義務	mw
 髮型	mx
 汗水	na
+不同	nb
 齒輪	nc
 滿足	nd
 波動	ne
@@ -970,6 +978,7 @@ columns:
 色彩	oo
 具有	op
 航班	or
+上海	os
 故事	ot
 進行	ou
 魚類	ov
@@ -991,6 +1000,7 @@ columns:
 質量	pp
 制度	pq
 盾牌	pr
+生産	ps
 降低	pt
 近日	pu
 隱藏	pv
@@ -1083,6 +1093,7 @@ columns:
 組織	uo
 紛紛	up
 綠色	uq
+人群	ur
 身體	us
 終於	ut
 座位	uu

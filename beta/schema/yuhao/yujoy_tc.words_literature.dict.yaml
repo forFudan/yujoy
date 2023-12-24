@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_tc.words_literature"
-version: "20231222"
+version: "20231224"
 sort: original
 columns:
   - text
@@ -16481,7 +16481,7 @@ columns:
 顧頭不顧尾	wfnt
 敏而好學	gkwg
 醜態畢露	ldss
-棄惡從善	ffwm
+棄惡從善	efwm
 夫貴妻榮	mkfm
 群起效尤	vhrq
 顧前不顧後	wlnw
@@ -16490,7 +16490,7 @@ columns:
 表裡山河	hsjn
 難以企及	dtuw
 大舉進攻	mdon
-充滿生機	fnpa
+充滿生機	enpa
 全國一盤棋	ibfa
 鬱郁不得志	lxnh
 丈二和尚摸不著頭腦	xagy
@@ -16514,10 +16514,10 @@ columns:
 梅妻鶴子	afol
 交口讚譽	rkrd
 漫天遍野	nfwe
-棄如敝屣	fwlt
+棄如敝屣	ewlt
 舉措失當	dfwg
 悔之莫及	bkdw
-棄若敝屣	fdlt
+棄若敝屣	edlt
 反哺之情	vkkb
 舉賢任能	djed
 鹹與維新	jduw
@@ -16532,14 +16532,14 @@ columns:
 恰同學少年	bqgg
 養在深閨人未識	mxnr
 前不著村後不著店	lndu
-天生麗質難自棄	fpff
+天生麗質難自棄	fpfe
 舉頭望明月	dfpy
 紙裡包不住火	usim
 床前明月光	ulji
 一舉成名天下知	fdkm
 舉杯邀明月	dady
 落霞與孤鶩齊飛	dsdo
-棄筆從戎	fgwk
+棄筆從戎	egwk
 卓然不群	uynv
 寧為玉碎不為瓦全	iiyi
 遍插茱萸少一人	wfdu
@@ -16636,7 +16636,7 @@ columns:
 最是倉皇辭廟日	qjuj
 青山著意化為橋	hjda
 取次花叢懶回顧	ladw
-不才明主棄	nhjf
+不才明主棄	nhje
 風吹仙袂飄飄舉	sked
 江上數峰青	nokh
 古人學問無遺力	ougs
@@ -16649,7 +16649,7 @@ columns:
 四時田園雜興	bjsq
 三顧頻煩天下計	ywnr
 群山萬壑赴荊門	vjde
-紅顏棄軒冕	uefq
+紅顏棄軒冕	ueeq
 血色羅裙翻酒汙	woxn
 替人垂淚到天明	mujj
 蠶叢及魚鳧	tvwq
@@ -16694,7 +16694,7 @@ columns:
 九華帳裡夢魂驚	fdrd
 反是生女好	vjpw
 日暮掩柴扉	jdfw
-野蔬充膳甘長藿	edfd
+野蔬充膳甘長藿	eded
 翠華想像空山裡	kdas
 他年錦裡經祠廟	egtu
 三萬裡河東入海	ydsn
@@ -16803,10 +16803,10 @@ columns:
 最好你忘掉	qwef
 君子學以致其道	vlgl
 莊子與惠子游於濠梁之上	dldo
-吾充吾愛汝之心	fffn
+吾充吾愛汝之心	fefn
 舉頭紅日近	dfup
 以直養而無害	trmi
-棄捐勿複道	ffil
+棄捐勿複道	efil
 南山與秋色	rjdo
 問言與誰餐	erdu
 龜玉毀於櫝中	oyik
@@ -16951,7 +16951,7 @@ columns:
 倚杖候荊扉	eaew
 群彥今汪洋	veun
 童稚開荊扉	wgew
-幼為長所育	jimf
+幼為長所育	jime
 松聲晚窗裡	ahjs
 一舉累十觴	fdso
 興是清秋髮	qjnm
@@ -16994,7 +16994,7 @@ columns:
 直覺巫山暮	rgnd
 朝與佳人期	rder
 減粉與園籜	ntdg
-唾棄如糞丸	kfwf
+唾棄如糞丸	kewf
 舉動自專由	djcu
 學非探其花	gffd
 舉假以供養	detm
@@ -17033,7 +17033,7 @@ columns:
 若耶溪歸興	dlnq
 湖與元氣連	ndfx
 仰攀日月行	egjw
-棄我如遺蹟	fwwx
+棄我如遺蹟	ewwx
 車輪與馬跡	xxdx
 家家養烏鬼	iimm
 不覺春已深	ngmn
@@ -17125,7 +17125,7 @@ columns:
 恐結他生裡	nues
 反乎爾者也	vwfe
 建功及春榮	vnwm
-永棄人間事	ifuh
+永棄人間事	ieuh
 但覺衣裳溼	egrn
 峰駢仙掌出	jceq
 花房小如許	dwir
@@ -17136,7 +17136,7 @@ columns:
 不學頭陀法	ngfn
 狼狽風塵裡	qqss
 廚煙覺遠庖	umgu
-恂然棄而走	byfh
+恂然棄而走	byeh
 無衣床夜寒	grui
 故學數有終	ogku
 雪壓低還舉	sved
@@ -17170,7 +17170,7 @@ columns:
 因招樊噲出	bfgq
 棹經垂猿把	aujf
 寄與愛茶人	idvu
-拾此充飢腸	fnfy
+拾此充飢腸	fney
 已覺春心動	wgmj
 濟時敢愛死	njcf
 鳶飛戾天者	kowh
@@ -17202,7 +17202,7 @@ columns:
 龜遊蓮葉上	oido
 是誰之過與	jrkd
 不以三隅反	ntyv
-猶為棄井也	qife
+猶為棄井也	qiee
 然遍地腥雲	ywhs
 榆柳蔭後簷	aadg
 全仗你抬身價	ieee
@@ -17245,7 +17245,7 @@ columns:
 淡著燕脂勻注	nddn
 得志與民由之	whdk
 與歌者米嘉榮	dchm
-棄甲曳兵而走	fayh
+棄甲曳兵而走	eayh
 與人有痔病者	duxh
 有顏回者好學	xebg
 採桑徑裡逢迎	fdwj
@@ -17301,7 +17301,7 @@ columns:
 百遍相看意未闌	vwae
 枕中雲氣千峰近	aksp
 就中最好是今朝	dkqr
-教育及時堪讚賞	hfwg
+教育及時堪讚賞	hewg
 南飛覺有安巢鳥	rogq
 眾峰來自天目山	xjcj
 紅蓮池裡白蓮開	udne
@@ -17314,7 +17314,7 @@ columns:
 好與名山作主人	wdyu
 晉陽已陷休回顧	fpww
 小鼎煎茶麵曲池	isln
-棄妾已去難重回	fwwb
+棄妾已去難重回	ewwb
 不覺潸然淚眼低	ngne
 浩然與溟涬同科	nydg
 遍地哀鴻滿城血	whdw
@@ -17362,7 +17362,7 @@ columns:
 香爐峰雪撥簾看	gmjk
 最傳秀句寰區滿	qegn
 蓮花始信兩飛峰	ddwj
-縱飲久判人共棄	uvof
+縱飲久判人共棄	uvoe
 閒與仙人掃落花	eded
 敢辭湫隘與囂塵	cvnh
 絳紗囊裡水晶丸	uurf

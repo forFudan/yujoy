@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_sc.quick"
-version: "20231222"
+version: "20231224"
 sort: original
 columns:
   - text
@@ -192,6 +192,7 @@ columns:
 非	ff
 辈	fg
 于	fh
+一	fi
 九	fj
 找	fk
 振	fl
@@ -347,6 +348,7 @@ columns:
 酉	li
 弟	lj
 总	lk
+了	ll
 关	lm
 耻	ln
 豫	lo
@@ -387,6 +389,7 @@ columns:
 盖	mx
 鹌	my
 汗	na
+不	nb
 河	nc
 满	nd
 波	ne
@@ -429,7 +432,7 @@ columns:
 具	op
 且	oq
 续	or
-巳	os
+上	os
 故	ot
 卡	ou
 急	ov
@@ -455,6 +458,7 @@ columns:
 朱	pp
 制	pq
 质	pr
+生	ps
 降	pt
 队	pu
 陌	pv
@@ -799,6 +803,7 @@ columns:
 报道	fe
 非常	ff
 于是	fh
+一定	fi
 九月	fj
 找到	fk
 振兴	fl
@@ -918,6 +923,7 @@ columns:
 监管	lg
 弟弟	lj
 总额	lk
+了解	ll
 关于	lm
 耻辱	ln
 酷爱	lp
@@ -951,6 +957,7 @@ columns:
 烦恼	mv
 盖子	mx
 汗水	na
+不同	nb
 河北	nc
 满足	nd
 波动	ne
@@ -986,6 +993,7 @@ columns:
 红利	on
 维持	oo
 具有	op
+上海	os
 故事	ot
 卡车	ou
 急需	ov
@@ -1007,6 +1015,7 @@ columns:
 隐藏	po
 制度	pq
 质量	pr
+生产	ps
 降低	pt
 队员	pu
 陌生	pv

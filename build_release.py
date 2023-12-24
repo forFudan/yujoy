@@ -10,7 +10,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.0-alpha-1"
+version = "v3.4.0-beta"
 
 # %%
 try:
@@ -20,12 +20,10 @@ except:
 
 # %%
 # Copy yujoy
-# shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
+shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
 shutil.copyfile("./beta/readme.md", f"./dist/yujoy/readme.txt")
 copy_tree("./beta/mabiao/", "./dist/yujoy/mabiao/")
 copy_tree("./beta/schema/", "./dist/yujoy/schema/")
-copy_tree("../yuhao/beta/schema/lua/", "./dist/yujoy/hotfix/lua/")
-copy_tree("./beta/hotfix/", "./dist/yujoy/hotfix/")
 
 # %%
 # copy yuhao
@@ -63,7 +61,7 @@ for file_name in [
     os.remove("./dist/yujoy/schema/" + file_name)
 
 shutil.make_archive(
-    f"../yuhao/dist/hamster/yuhao_joy_{version}", "zip", "./dist/yujoy/schema"
+    f"../yuhao/dist/hamster/卿雲爛兮_{version}", "zip", "./dist/yujoy/schema"
 )
 
 # %%

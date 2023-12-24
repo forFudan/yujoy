@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.words"
-version: "20231222"
+version: "20231224"
 sort: original
 columns:
   - text
@@ -73791,6 +73791,7 @@ columns:
 謝娜	ruwo
 谢娜	cuwo
 之力	kzsl
+刑拘	fdfi
 車市	xcrr
 车市	gcrr
 寫着	iims
@@ -103301,6 +103302,7 @@ columns:
 中都	klhj
 雙色球	ooyf
 双色球	doyf
+刑事拘留	fhfj
 酷派	lpnp
 豆粕	fktd
 片區	tptk
@@ -104948,16 +104950,7 @@ columns:
 自查自糾	cacu
 自查自纠	caco
 一干	fiag
-無牌	gdtm
-无牌	fqtm
-約達	uihm
-约达	oimu
 米其林	traa
-就睡	disw
-無錢	gdtk
-无钱	fqvf
-萬寧	dvin
-万宁	fiic
 格網	atuq
 格网	atqg
 食用菌	vadb
@@ -119372,7 +119365,6 @@ columns:
 筋节	gyde
 機關用盡	aeav
 机关用尽	alat
-拱抱	fdfi
 輔車相依	xxae
 辅车相依	ggae
 謡諺	rvrw
@@ -120359,6 +120351,7 @@ columns:
 在给	xlos
 受讓方	vrif
 受让方	vcif
+行政拘留	wffj
 快遞員	bpkj
 快递员	blkf
 還記得	xrwj
@@ -126332,6 +126325,8 @@ columns:
 定断	iftt
 囚鳥	buqn
 囚鸟	buxn
+日月光華	jyid
+日月光华	jyie
 治黑	ndxh
 删號	iikd
 删号	iikd
@@ -132265,6 +132260,7 @@ columns:
 质效	prrp
 高攻	dgnt
 山推	jsfo
+行拘	wofi
 武廣	fkud
 武广	fkug
 酒鋼	nltq
@@ -132869,14 +132865,7 @@ columns:
 版署	tpxh
 碼號	qckd
 码号	qbkd
-洪樓	ndak
-洪楼	ndat
-開購	efjd
-开购	fdfi
 井道	aplc
-電冶	syad
-电冶	ydad
-小蛋	ixon
 追潮	wunr
 輕挽	xffo
 轻挽	gdfo
@@ -132905,14 +132894,10 @@ columns:
 聂风	ldsg
 聯強	ljjd
 联强	lljk
-光口	iokv
-奎文	mhew
 燈殼	mdhf
 灯壳	mcho
 寬緊	idjd
 宽紧	idld
-修細	elus
-修细	elos
 雙抗	oofr
 双抗	ddfr
 星陳	jppa
@@ -132920,37 +132905,26 @@ columns:
 紅傘	unuu
 红伞	onul
 哨塔	kihd
-古蕩	ogdn
-古荡	ogdn
 弱風	jasf
 弱风	jasg
-法神	nhci
-神墓	cidj
-強師	jdwf
-强师	jklf
-南校	rqar
+卿雲	jvsa
+卿云	jvad
 筍衣	girs
 笋衣	gvrs
-血情	wxbh
 奧城	owhk
 奥城	othk
 合巹	shon
 合卺	shon
 圖區	bktk
 图区	bttg
-南家	rqik
 歐迪	tkuu
 欧迪	tguu
-退查	iuaj
-掛鏈	fhtx
-挂链	fhvg
 魅魔	mwvm
 企調	unri
 企调	unci
 留海	jsng
 龍域	wyhk
 龙域	qwhk
-平量	aljf
 莅會	deuf
 莅会	deua
 蒞會	dnuf
@@ -132968,8 +132942,6 @@ columns:
 提押	fjfa
 糟滷	tdnj
 糟卤	tdub
-眼膠	siyk
-眼胶	siyr
 粉晶	tpjj
 青協	hyrs
 青协	hyrs
@@ -132980,7 +132952,6 @@ columns:
 恋空	ynhn
 聽唱	lykj
 听唱	kpkj
-斜了	ufll
 匯作	tneg
 汇作	nteg
 隔火	pfmh
@@ -132988,7 +132959,6 @@ columns:
 弄啥	ydku
 藍染	djnf
 蓝染	dlnf
-刺戳	aqkk
 回戲	bktf
 回戏	bkdk
 清穿	nhhx
@@ -133009,8 +132979,6 @@ columns:
 貨載	ebrk
 货载	ebrk
 阿片	pctp
-魔戰	vmkk
-魔战	vmuk
 傻妹	eoww
 採貨	fveb
 采货	vaeb
@@ -133035,7 +133003,6 @@ columns:
 鷗鷺	tkxt
 鸥鹭	tgxt
 阿土	pcht
-介素	uphu
 杜健	ahev
 小瓣	ixjv
 貴局	koto
@@ -133055,7 +133022,6 @@ columns:
 斂聚	stld
 敛聚	ufld
 佳吉	ehhk
-北校	obar
 巨騙	tecq
 巨骗	tebq
 黃珍	dayu
@@ -133064,11 +133030,7 @@ columns:
 俊丽	edfq
 獅駝	qwci
 狮驼	qlbi
-泊美	ndmm
-翠山	kkjs
-舒翼	ubkk
 安答	iwgs
-魔血	vmwx
 魁元	mafo
 版區	tptk
 版区	tptg
@@ -133076,8 +133038,6 @@ columns:
 翠烟	kkmb
 點倉	xuui
 点仓	ukue
-醉過	lrcu
-醉过	lrhu
 美錯	mmtd
 美错	mmvd
 掖縣	froi
@@ -133087,8 +133047,6 @@ columns:
 極道	allc
 极道	aclc
 恩及	bmci
-講笑	rdgh
-讲笑	cagh
 泰陽	mnpj
 泰阳	mnpj
 車兜	xcdj
@@ -133101,13 +133059,7 @@ columns:
 键能	vvdy
 桃葉	aedl
 桃叶	aekr
-蕩過	dncu
-荡过	dnhu
-達子	hmlz
-达子	mulz
-盛演	koni
 上庸	osuv
-慧娟	qqwk
 雙鑽	ootp
 双钻	ddvu
 險山	psjs
@@ -133460,15 +133412,9 @@ columns:
 雾珠	styp
 尖圓	imbk
 尖圆	imbk
-淋膜	nayd
 泉脉	dnyi
 泉脈	dnyp
 娼寮	wjim
-引避	jltk
-輕院	xfpi
-轻院	gdpi
-輕波	xfne
-轻波	gdne
 拔份	fxep
 寬圓	idbk
 宽圆	idbk
@@ -133841,6 +133787,8 @@ columns:
 顾眄	vesc
 轉俏	xxei
 转俏	gaei
+卿雲爛兮	jsmp
+卿云烂兮	jamp
 過晌	cujo
 过晌	hujo
 抱撼	fifk
@@ -134245,6 +134193,7 @@ columns:
 么么么	wwwd
 來沒來	cncl
 麼麼麼	vvvj
+爛然星陳	myjp
 閏十一月	erfy
 閏十二月	eray
 永遠的神	ihdc
@@ -134256,6 +134205,7 @@ columns:
 稀世之才	glkh
 哇酷哇酷	klkl
 待富人群	wiuv
+烂然星陈	myjp
 闰十一月	rrfy
 闰十二月	rray
 永远的神	ifdc
@@ -134264,11 +134214,9 @@ columns:
 泽连斯基	ngrr
 百媚千红	vwjo
 社會性死亡	cubp
-間諜過家家	erci
 伊拉斯姆斯	efrr
 宇浩輸入法	inxn
 社会性死亡	cubp
-间谍过家家	rchi
 宇浩输入法	ingn
 寧可玉碎不爲瓦全	icyu
 宁可玉碎不为瓦全	icyu
