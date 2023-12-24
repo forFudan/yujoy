@@ -10,12 +10,15 @@ aux_links:
 
 # External navigation links
 nav_external_links:
-  - title: 宇浩输入法官网
-    url: https://zhuyuhao.com/yuhao
+  - title: 下载地址
+    url: https://github.com/forFudan/yujoy/releases
     hide_icon: true # set to true to hide the external link icon - defaults to false
   - title: 拆分查询
     url: https://zhuyuhao.com/yuhao/joy/chaifen
-    hide_icon: false # set to true to hide the external link icon - defaults to false
+    hide_icon: true # set to true to hide the external link icon - defaults to false
+  - title: 宇浩输入法官网
+    url: https://zhuyuhao.com/yuhao
+    hide_icon: true # set to true to hide the external link icon - defaults to false
 
 markdown: kramdown
 math: katex
