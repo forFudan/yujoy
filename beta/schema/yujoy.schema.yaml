@@ -6,9 +6,10 @@ schema:
   name: 卿雲·通打
   version: 20231001
   author:
-    - 發明人 朱宇浩
-    - Rime方案 <https://zhuyuhao.com/yuhao/>
-    - 官方QQ群 735728797
+    - 項目策劃 錢多多
+    - 技术支持 forFudan
+    - Rime方案 <https://zhuyuhao.com/yujoy/>
+    - 官方QQ群 374630778
   description: |
     卿雲爛兮·繁簡平衡，簡碼設置適合主單副詞的繁簡通打派.
     可以在 yujoy.dict.yaml 文件中手動開啓詞庫.

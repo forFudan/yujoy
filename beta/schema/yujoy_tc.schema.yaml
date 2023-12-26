@@ -6,9 +6,10 @@ schema:
   name: 卿雲·陸繁
   version: 20230522
   author:
-    - 發明人 朱宇浩
-    - Rime方案 <https://zhuyuhao.com/yuhao/>
-    - 官方QQ群 735728797
+    - 項目策劃 錢多多
+    - 技术支持 forFudan
+    - Rime方案 <https://zhuyuhao.com/yujoy/>
+    - 官方QQ群 374630778
   description: |
     卿雲爛兮，繁簡通打，以傳統漢字爲主設置簡碼。
     單字和詞庫編碼同時兼容台灣、香港、大陸古籍三種標準的繁體字形。
