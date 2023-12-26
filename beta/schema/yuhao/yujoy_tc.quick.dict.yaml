@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_tc.quick"
-version: "20231224"
+version: "20231226"
 sort: original
 columns:
   - text
@@ -135,7 +135,7 @@ columns:
 通	da
 白	db
 亭	dc
-華	dd
+參	dd
 花	de
 難	df
 高	dg
@@ -537,7 +537,7 @@ columns:
 田	st
 界	su
 雨	sv
-睡	sw
+襯	sw
 露	sx
 電	sy
 匣	ta
@@ -748,7 +748,7 @@ columns:
 自己	cz
 通過	da
 白銀	db
-華人	dd
+參與	dd
 花費	de
 難道	df
 高度	dg
@@ -1057,7 +1057,7 @@ columns:
 田野	st
 界面	su
 雨水	sv
-睡眠	sw
+襯衫	sw
 露出	sx
 電話	sy
 尼龍	tb

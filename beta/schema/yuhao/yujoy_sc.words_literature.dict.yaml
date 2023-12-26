@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_sc.words_literature"
-version: "20231224"
+version: "20231226"
 sort: original
 columns:
   - text
@@ -2186,7 +2186,7 @@ columns:
 无事生事	fhph
 手胼足胝	kyxy
 行不得也哥哥	wnwc
-闲来垂钓碧溪上	rfwo
+闲来垂钓碧溪上	rfjo
 关心民瘼	lnol
 人生在世不称意	upxw
 烹羊宰牛且为乐	dmij
@@ -2197,7 +2197,7 @@ columns:
 诗成泣鬼神	cknc
 芙蓉帐暖度春宵	ddri
 纲纪废弛	oouj
-坐观垂钓者	udwh
+坐观垂钓者	udjh
 还寝梦佳期	niar
 轻拢慢捻抹复挑	gfbf
 轻烟散入五侯家	gmdi
@@ -2698,7 +2698,7 @@ columns:
 大有其人	mxru
 去留肝胆两昆仑	hjyu
 白毛浮绿水	dgnn
-万条垂下绿丝绦	ftwo
+万条垂下绿丝绦	ftjo
 碧玉妆成一树高	yyod
 夜半无人私语时	rlfj
 明白如话	jdwc
@@ -2937,7 +2937,7 @@ columns:
 王师北定中原日	yloj
 何当共剪西窗烛	eidm
 江枫渔火对愁眠	nans
-星垂平野阔	jwar
+星垂平野阔	jjar
 为有暗香来	ixjf
 青山隐隐水迢迢	hjpj
 门前流水尚能西	rlnl
@@ -3237,7 +3237,7 @@ columns:
 荆门九派通	drfd
 却是旧时相识	hjlc
 越人语天姥	hucw
-垂泪对宫娥	wndw
+垂泪对宫娥	jndw
 千古兴亡多少事	jonh
 不尽长江滚滚流	ntcn
 杨柳青青江水平	aaha
@@ -3413,7 +3413,7 @@ columns:
 化作相思泪	eean
 花有清香月有阴	dxnp
 人生长恨水长东	upce
-替人垂泪到天明	muwj
+替人垂泪到天明	mujj
 梅子金黄杏子肥	alty
 应知故乡事	umoh
 愿同尘与灰	vqix
@@ -3982,7 +3982,7 @@ columns:
 月明松下房栊静	yjah
 十指不沾泥	rfnn
 瑞脑消金兽	yynl
-对此如何不泪垂	dnww
+对此如何不泪垂	dnwj
 远慰风雨夕	ftsy
 中军置酒饮归客	koxi
 不觉碧山暮	nnyd
@@ -4252,7 +4252,7 @@ columns:
 升天入地求之遍	wfiq
 秋草独寻人去后	gdqp
 风头如刀面如割	sawi
-终古垂杨有暮鸦	oowx
+终古垂杨有暮鸦	oojx
 为人性僻耽佳句	iubi
 新鬼烦冤旧鬼哭	wmmk
 万古惟留楚客悲	fobf
@@ -4380,7 +4380,7 @@ columns:
 长沙马王堆汉墓	cnbd
 今日欢呼孙大圣	ujdd
 只缘妖雾又重来	kowf
-垂死病中惊坐起	wflh
+垂死病中惊坐起	jflh
 而后人哀之	kpuk
 玉宇澄清万里埃	yinh
 本立而道生	awkp
@@ -5642,7 +5642,7 @@ columns:
 天地既爱酒	fhvn
 一遍洗寰瀛	fqnn
 上善若水任方圆	omdb
-人家帘幕垂	uihw
+人家帘幕垂	uihj
 以八千岁为春	tpjm
 悲莫悲兮生别离	fdfe
 掬水月在手	fnyk
@@ -6937,7 +6937,7 @@ columns:
 沧海横流安足虑	nnat
 恢恢乎其于游刃必有余地矣	bbwd
 暮及陇山头	dcpa
-翼若垂天之云	kdwa
+翼若垂天之云	kdja
 色与春庭暮	odmd
 项羽季父也	nkge
 于从政乎何有	fufx
@@ -6955,7 +6955,7 @@ columns:
 落月摇情满江树	dyfa
 怒涛卷霜雪	wnls
 臣死且不避	jfot
-青天垂玉钩	hfwv
+青天垂玉钩	hfjv
 秋风起兮白云飞	gsho
 云之君兮纷纷而来下	akvc
 一诗换得两尖团	fcfb
@@ -7411,7 +7411,7 @@ columns:
 月明人倚楼	yjua
 此时立在最高山	njwj
 与君都盖洛阳城	dvhh
-垂緌饮清露	wuus
+垂緌饮清露	juus
 青枫浦上不胜愁	hang
 援北斗兮酌桂浆	foao
 司马牛问仁	obpe
@@ -7621,7 +7621,7 @@ columns:
 夜泊牛渚怀古	rnpo
 当哭相和也	ikae
 长记平山堂上	ccao
-度曲绿云垂	uqow
+度曲绿云垂	uqoj
 不如因善遇之	nwbk
 已作霜风九月寒	wesi
 欲为圣明除弊事	pidh
@@ -7670,7 +7670,7 @@ columns:
 惜哉时不遇	brjv
 使君自有妇	evcw
 贼其君者也	frve
-垂钓绿湾春	wvom
+垂钓绿湾春	jvom
 举所佩玉玦以示之者三	nwey
 旷然忘所在	jypx
 化作啼鹃带血归	eekl
@@ -7985,7 +7985,7 @@ columns:
 相顾无相识	avfc
 必若救疮痍	ndfl
 拾穗许村童	fgcw
-垂三光之明者	wyih
+垂三光之明者	jyih
 一事无成百不堪	fhfh
 不寐百忧生	nivp
 赤叶枫林百舌鸣	hkak
@@ -9460,7 +9460,7 @@ columns:
 雕虫蒙记忆	iidb
 双燕复双燕	ddgd
 蒲苇一时纫	ddfo
-四角垂香囊	bowr
+四角垂香囊	bojr
 晨起动征铎	jhav
 同心一人去	qnfh
 开口咏凤凰	fkks
@@ -9539,7 +9539,7 @@ columns:
 因以为号焉	btif
 粽香筒竹嫩	tggw
 审权势之宜	iafi
-垂老不得安	whni
+垂老不得安	jhni
 子贡问君子	lnrl
 初心不可忘	snnp
 豺狼尽冠缨	pqto
@@ -10024,7 +10024,7 @@ columns:
 月露为知音	ysiw
 眼前一杯酒	slfn
 车马日盈门	gbjr
-仙人垂两足	euwx
+仙人垂两足	eujx
 不耕自有余	nqcu
 勿违今日言	iaur
 而蟾蜍衔之	kiik
@@ -11479,7 +11479,7 @@ columns:
 生也死之徒	pefw
 葵藿倾太阳	ddep
 丈夫非无泪	xmfn
-棹经垂猿把	aowf
+棹经垂猿把	aojf
 何处相思苦	etad
 劝君少求利	dvig
 物性固莫夺	pbbm
@@ -12095,7 +12095,7 @@ columns:
 览民德焉错辅	lowg
 此其志不在小	nrhi
 自既灌而往者	cvnh
-小艇垂纶初罢	iowx
+小艇垂纶初罢	iojx
 遍历名山大川	qvyf
 羡比翼之共林	mbka
 今夕不知何夕	uyny
@@ -13396,7 +13396,7 @@ columns:
 不如闻早还却愿	nwrv
 未觉杭颍谁雌雄	wnax
 细观手面分转侧	odke
-须得垂杨相发挥	wwwf
+须得垂杨相发挥	wwjf
 只鸡斗酒定膰吾	kdaf
 主人劝我洗足眠	iuds
 起舞徘徊风露下	hgwc
@@ -13524,7 +13524,7 @@ columns:
 未及前贤更勿疑	wclb
 十年蹴踘将雏远	rgxf
 如今化作雨苍龙	wueq
-二月垂杨未挂丝	aywo
+二月垂杨未挂丝	ayjo
 天教晚发赛诸花	fhjd
 女郎剪下鸳鸯锦	wilv
 纷纷辞客多停笔	oobg
@@ -13580,7 +13580,7 @@ columns:
 三声欲断疑肠断	yhpt
 归雁来时数附书	lvfo
 精逃白骨累三遭	tedd
-垂天雌霓云端下	wfnc
+垂天雌霓云端下	jfnc
 海近风多健鹤翎	npsu
 王母桃花千遍红	yqao
 隐几熟眠开北牖	psdt
@@ -13827,7 +13827,7 @@ columns:
 今夜江头明月多	urny
 千山浓绿生云外	jjny
 春生江上几人还	mpnn
-垂竿已羡磻溪老	wgwh
+垂竿已羡磻溪老	jgwh
 昨日看花花灼灼	jjkm
 万壑有声含晚籁	fuxg
 水荇牵风翠带长	ndmc
@@ -13988,7 +13988,7 @@ columns:
 盘餐市远无兼味	ourk
 犹作江南未归客	qeni
 野花啼鸟亦欣然	edky
-千株万片绕林垂	jafw
+千株万片绕林垂	jafj
 家泉石眼两三茎	idqd
 即今耆旧无新语	vuhc
 官船来往乱如麻	iofv
@@ -14499,7 +14499,7 @@ columns:
 或五十步而后止	kfrn
 湖上春来似画图	nomb
 破头山北北山南	qajr
-暮年垂泪对桓伊	dgwe
+暮年垂泪对桓伊	dgje
 老来事业转荒唐	hfhu
 晓看阴根紫陌生	jkpp
 日日悲看水独流	jjfn
@@ -14602,7 +14602,7 @@ columns:
 朝阳岩下湘水深	rpjn
 十字津头一字行	rinw
 曾参岂是杀人者	ldjh
-唯有垂杨管别离	kxwe
+唯有垂杨管别离	kxje
 各使苍生有环堵	tedh
 绝胜南陌碾成尘	oyri
 血作陈陶泽中水	wepn
@@ -14806,7 +14806,7 @@ columns:
 恶者贵而美者贱	ghkf
 满地芦花和我老	nhdh
 千片赤英霞烂烂	jthm
-纵使长条似旧垂	oecw
+纵使长条似旧垂	oecj
 却因歌舞破除休	hbce
 劝君终日酩酊醉	dvol
 几许渔人飞短艇	scno
@@ -14817,7 +14817,7 @@ columns:
 咸阳市中叹黄犬	kprq
 至今九年而不复	dufg
 江草江花处处鲜	ndnt
-垂鞭直拂五云车	wprg
+垂鞭直拂五云车	jprg
 秦王与赵王会饮	mydu
 徐福空来不得仙	wche
 轻于柳絮重于霜	gfas

@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_sc.quick"
-version: "20231224"
+version: "20231226"
 sort: original
 columns:
   - text
@@ -538,7 +538,7 @@ columns:
 田	st
 边	su
 雨	sv
-睡	sw
+衫	sw
 露	sx
 胃	sy
 条	ta
@@ -1074,7 +1074,6 @@ columns:
 田野	st
 边缘	su
 雨水	sv
-睡眠	sw
 露出	sx
 胃口	sy
 条件	ta
@@ -1237,6 +1236,7 @@ columns:
 寒	idp
 富	ifk
 蜻	ihy
+垂	jdf
 景	jdi
 迢	jku
 晕	jog

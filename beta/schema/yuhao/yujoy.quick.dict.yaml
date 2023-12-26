@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.quick"
-version: "20231224"
+version: "20231226"
 sort: original
 columns:
   - text
@@ -111,7 +111,7 @@ columns:
 通	da
 白	db
 亭	dc
-華	dd
+參	dd
 花	de
 与	df
 高	dg
@@ -513,7 +513,7 @@ columns:
 田	st
 界	su
 雨	sv
-睡	sw
+衫	sw
 露	sx
 電	sy
 料	ta
@@ -698,6 +698,7 @@ columns:
 寒	idp
 富	ifk
 審	iwt
+垂	jdf
 景	jdi
 時	jhh
 暑	jhj
