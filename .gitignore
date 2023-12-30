@@ -18,6 +18,7 @@ _site/
 /mabiao
 /schema
 /.mypy_cache
+/beta
 
 # Ignore distributions
 /dist/*.zip

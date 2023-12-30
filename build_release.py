@@ -10,7 +10,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.0-rc"
+version = "v3.4.1"
 
 # %%
 try:
@@ -20,6 +20,10 @@ except:
 
 # %%
 # Copy yujoy
+shutil.copyfile(
+    "./beta/schema/yuhao/yujoy.full.dict.yaml", f"./dist/yujoy.full.dict.yaml"
+)
+
 shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
 shutil.copyfile("./beta/readme.md", f"./dist/yujoy/readme.txt")
 copy_tree("./beta/mabiao/", "./dist/yujoy/mabiao/")
