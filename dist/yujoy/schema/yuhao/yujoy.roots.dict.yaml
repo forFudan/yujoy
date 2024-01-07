@@ -1,0 +1,260 @@
+# encoding: utf-8
+---
+name: "yujoy.roots"
+version: "20240107"
+sort: original
+columns:
+  - text
+  - code
+...
+
+[A鍵字根] 二干用甲木韋	zaa
+[B鍵字根] 匕马舌囗穴	zbb
+[C鍵字根] 长丁讠咼來馬乃示下自	zcc
+[D鍵字根] 白艹又见厶至	zdd
+[E鍵字根] 鬥儿也卩門𬺰七亻文	zee
+[F鍵字根] 贝川巛非一九扌	zff
+[G鍵字根] 车禾乂廴丌見毛皮尚竹	zgg
+[H鍵字根] 寸电骨夭鹿黽欠士土走	zhh
+[I鍵字根] 虫丶方艮臼宀气入申小	zii
+[J鍵字根] 貝臣刀甫弓幺鹵卯千日山曰辛早	zjj
+[K鍵字根] 丑而戈弋面手豕口戊之	zkk
+[L鍵字根] 丷疒辰耳缶酉了世予西子	zll
+[M鍵字根] 長大夫鬼火羊壬矢	zmm
+[N鍵字根] 不齒工氵水瓦心止龰	znn
+[O鍵字根] 巴隹亍刂飛古乙冖且纟上巳魚兀向舟	zoo
+[P鍵字根] 八冊阝革斤牛生亡豸	zpp
+[Q鍵字根] 丰户尤冂凵母鳥犬犭石烏	zqq
+[R鍵字根] 亥言巾门其十	zrr
+[S鍵字根] 風合衤𧘇几丂力目僉殳田雨	zss
+[T鍵字根] 匚虎乚金米夂片爿尸鱼	ztt
+[U鍵字根] 卜辶广由人饣糸身	zuu
+[V鍵字根] 厂瓜钅彐麻食禺爪	zvv
+[W鍵字根] 彳𠂤已己立末女丿彡未	zww
+[X鍵字根] 車黑牙皿鸟罒乌𠂇足	zxx
+[Y鍵字根] 亦三月王夕	zyy
+[A鍵補碼] e 𠄞𠄟𠄠⺀⼆⼎冫二	zaa
+[A鍵補碼] g 干⼲	zaa
+[A鍵補碼] i 用⽤	zaa
+[A鍵補碼] j 甲	zaa
+[A鍵補碼] k 㐄𰀁ヰキ	zaa
+[A鍵補碼] m 朩𣎳⽊木	zaa
+[A鍵補碼] w 𫝀韋⾱	zaa
+[B鍵補碼] b 𠤎匕⼔	zbb
+[B鍵補碼] m ⻢马	zbb
+[B鍵補碼] s 舌⾆	zbb
+[B鍵補碼] w ⼞囗	zbb
+[B鍵補碼] x ⽳⺖忄穴	zbb
+[C鍵補碼] c 长⻓	zcc
+[C鍵補碼] d 丁	zcc
+[C鍵補碼] i 讠⻈	zcc
+[C鍵補碼] k 咼冎	zcc
+[C鍵補碼] l 來來	zcc
+[C鍵補碼] m ⾺馬	zcc
+[C鍵補碼] n 乃	zcc
+[C鍵補碼] s 礻示⺬⺭⽰	zcc
+[C鍵補碼] x 丅下	zcc
+[C鍵補碼] z 自⾃	zcc
+[D鍵補碼] b ⽨白⽩癶	zdd
+[D鍵補碼] c 艹𠀎龷廾廾艹卄⺾⺿⼶⻀卝艹	zdd
+[D鍵補碼] g ⾼高	zdd
+[D鍵補碼] i 龴スマ⼜又	zdd
+[D鍵補碼] j 见⻅	zdd
+[D鍵補碼] m ⼛厶	zdd
+[D鍵補碼] s 卅卌	zdd
+[D鍵補碼] z 至⾄	zdd
+[E鍵補碼] d ⾾鬥	zee
+[E鍵補碼] e 𫶧儿⼉	zee
+[E鍵補碼] i 也	zee
+[E鍵補碼] j 卩⺋𰆊⼙㔾	zee
+[E鍵補碼] k ュコユ	zee
+[E鍵補碼] l ⾥里里	zee
+[E鍵補碼] m 乜𬺰⾨門	zee
+[E鍵補碼] q 𫠠七	zee
+[E鍵補碼] r ⺅亻	zee
+[E鍵補碼] w 文⽂	zee
+[F鍵補碼] b 贝⻉	zff
+[F鍵補碼] c 川巛⼮巜	zff
+[F鍵補碼] f 非⾮	zff
+[F鍵補碼] i 𪛙㇐⼀㇀一	zff
+[F鍵補碼] j 九	zff
+[F鍵補碼] s 扌⺘	zff
+[G鍵補碼] c 车⻋	zgg
+[G鍵補碼] h 禾⽲	zgg
+[G鍵補碼] i 𠂭㐅廴⼵乂	zgg
+[G鍵補碼] j 丌見⾒見	zgg
+[G鍵補碼] m ⽑毛	zgg
+[G鍵補碼] p 皮⽪	zgg
+[G鍵補碼] s 尙𫩠龸尚	zgg
+[G鍵補碼] z ⺮𠂉𥫗竹⽵	zgg
+[H鍵補碼] c 寸⼨	zhh
+[H鍵補碼] d 电	zhh
+[H鍵補碼] g ⻣⾻骨	zhh
+[H鍵補碼] i 𠂆夭⺁	zhh
+[H鍵補碼] l ⿅鹿鹿	zhh
+[H鍵補碼] m 𪚴黽⿌	zhh
+[H鍵補碼] q ⽋欠	zhh
+[H鍵補碼] s 龶⼠士	zhh
+[H鍵補碼] t ⺹耂土⼟	zhh
+[H鍵補碼] z ⾛走	zhh
+[I鍵補碼] b ⼓勹⺆	zii
+[I鍵補碼] c ⾍虫	zii
+[I鍵補碼] d ㇏丶㇔㇝乀㇃⼂	zii
+[I鍵補碼] f ⽅方	zii
+[I鍵補碼] g 艮⾉	zii
+[I鍵補碼] j ⾅𦥑⺽臼	zii
+[I鍵補碼] m 宀⼧	zii
+[I鍵補碼] q 气⽓	zii
+[I鍵補碼] r 入⼊	zii
+[I鍵補碼] s 申	zii
+[I鍵補碼] x ⼩⺌小𡭔𣥂	zii
+[J鍵補碼] b ⾙貝	zjj
+[J鍵補碼] c 𦣞⾂𦣝臣	zjj
+[J鍵補碼] d 刀⼑	zjj
+[J鍵補碼] f 甫	zjj
+[J鍵補碼] g 𢎗𢎜⼸弓	zjj
+[J鍵補碼] i 幺⺓⼳	zjj
+[J鍵補碼] l 鹵⿄	zjj
+[J鍵補碼] m 卯	zjj
+[J鍵補碼] q 千	zjj
+[J鍵補碼] r ⽈⽇日𫩏	zjj
+[J鍵補碼] s 山⼭	zjj
+[J鍵補碼] v 𱍸𠂎曰	zjj
+[J鍵補碼] x ⾟辛𨐋	zjj
+[J鍵補碼] z 早	zjj
+[K鍵補碼] c 丑	zkk
+[K鍵補碼] e 而⽽	zkk
+[K鍵補碼] g 戈⼽	zkk
+[K鍵補碼] i ⼷弋	zkk
+[K鍵補碼] m ⾯面	zkk
+[K鍵補碼] s 龵豕𧰨豕⾗手⼿	zkk
+[K鍵補碼] v ⼝口㇣〇	zkk
+[K鍵補碼] w 戊	zkk
+[K鍵補碼] x 习	zkk
+[K鍵補碼] z 之	zkk
+[L鍵補碼] b 𬼀⽧丷リ疒	zll
+[L鍵補碼] c 辰䒑辰⾠	zll
+[L鍵補碼] e ⽿耳	zll
+[L鍵補碼] f ⽸缶	zll
+[L鍵補碼] i ⾣酉	zll
+[L鍵補碼] l 了了𠄏	zll
+[L鍵補碼] s ⼁㇑〢世丨〣	zll
+[L鍵補碼] v 予𠄔	zll
+[L鍵補碼] x ⻄⻃襾覀西	zll
+[L鍵補碼] z ⼦子	zll
+[M鍵補碼] b ⺣⾽灬髟	zmm
+[M鍵補碼] c ⻑長⾧镸⻒	zmm
+[M鍵補碼] d 𡗗⼤大	zmm
+[M鍵補碼] f 甶夫	zmm
+[M鍵補碼] g 鬼⿁⻤	zmm
+[M鍵補碼] h 火⽕	zmm
+[M鍵補碼] i 羊⽺⺷⺶𦍌	zmm
+[M鍵補碼] r 𡈼壬	zmm
+[M鍵補碼] s 矢⽮	zmm
+[N鍵補碼] b 不不	znn
+[N鍵補碼] c ⿒齒	znn
+[N鍵補碼] g 工𪛜⼯	znn
+[N鍵補碼] s 水氵𭕄氺⺡⽔𠁼⺢⺍ッ	znn
+[N鍵補碼] w ⽡瓦	znn
+[N鍵補碼] x 心⼼	znn
+[N鍵補碼] z 止⽌𱤻龰	znn
+[O鍵補碼] b 巴	zoo
+[O鍵補碼] c 亍隹⾫	zoo
+[O鍵補碼] d ⺉刂	zoo
+[O鍵補碼] f ⾶飛	zoo
+[O鍵補碼] g 古	zoo
+[O鍵補碼] i ㇈㇆㇌⼅㇅乙乛⼄㇊㇘㇎亅㇖乁㇋㇕㇇㇍⺄𠄎𠃍㇢㇚㇡㇠乁⺂𠃌	zoo
+[O鍵補碼] m ⺈⼍冖𠂊	zoo
+[O鍵補碼] q 且丬⺦	zoo
+[O鍵補碼] s ⺰上纟⺒丄𪛚巳	zoo
+[O鍵補碼] v ⿂魚	zoo
+[O鍵補碼] w 兀兀⺎	zoo
+[O鍵補碼] x 向𰃦	zoo
+[O鍵補碼] z 舟⾈	zoo
+[P鍵補碼] b 八⼋	zpp
+[P鍵補碼] c 𠕁冊𠕋	zpp
+[P鍵補碼] f ⻖阝⻏	zpp
+[P鍵補碼] g ⾰革	zpp
+[P鍵補碼] j ⽄斤	zpp
+[P鍵補碼] l 𣎆	zpp
+[P鍵補碼] n 牛⺧𠂒牜⽜	zpp
+[P鍵補碼] s ⽣生	zpp
+[P鍵補碼] w 亡	zpp
+[P鍵補碼] z ⾘豸	zpp
+[Q鍵補碼] c 屮屮⼬䶹屮	zqq
+[Q鍵補碼] f 丰	zqq
+[Q鍵補碼] g 丱	zqq
+[Q鍵補碼] h 户戸	zqq
+[Q鍵補碼] i ⺐尤尢尢⼪	zqq
+[Q鍵補碼] j 𠂈冂⼌丩彑	zqq
+[Q鍵補碼] k ⼐𠙴凵凵	zqq
+[Q鍵補碼] m ⺟母	zqq
+[Q鍵補碼] n ⿃鳥	zqq
+[Q鍵補碼] q ⽝⺨犭犬	zqq
+[Q鍵補碼] s 石⽯	zqq
+[Q鍵補碼] w 烏	zqq
+[R鍵補碼] h 亥	zrr
+[R鍵補碼] i ⾔訁言	zrr
+[R鍵補碼] j 巾⼱	zrr
+[R鍵補碼] m 门⻔	zrr
+[R鍵補碼] q 其	zrr
+[R鍵補碼] s 十⼗𬂛	zrr
+[R鍵補碼] t ⼇亠	zrr
+[S鍵補碼] f ⾵風	zss
+[S鍵補碼] h 合𪛗	zss
+[S鍵補碼] i 𧘇⻂衤	zss
+[S鍵補碼] j ⺇⼏𠘨𠘧几	zss
+[S鍵補碼] k 丂	zss
+[S鍵補碼] l ⼒力力	zss
+[S鍵補碼] m ⽬目	zss
+[S鍵補碼] q 僉	zss
+[S鍵補碼] s ⽎殳	zss
+[S鍵補碼] t 田⽥	zss
+[S鍵補碼] v ⻗⾬雨	zss
+[T鍵補碼] f 𠥓匸匚⼕⼖	ztt
+[T鍵補碼] h ⾌⻁虍虎	ztt
+[T鍵補碼] i ㇉𬼂㇙⺃㇟㇛㇞𡿨㇜乚㇂𠃉㇄𠃊𠃋𠄌𠃑㇗	ztt
+[T鍵補碼] j ⾦金釒金	ztt
+[T鍵補碼] m 米⽶	ztt
+[T鍵補碼] p 夂夊⺙⽚⼡攵⼢片	ztt
+[T鍵補碼] q 爿⽙	ztt
+[T鍵補碼] s 尸𠃜⼫	ztt
+[T鍵補碼] v 鱼⻥	ztt
+[U鍵補碼] b ⼘卜⺊	zuu
+[U鍵補碼] c ⻌⻍辶辶⻎	zuu
+[U鍵補碼] g ⼴广	zuu
+[U鍵補碼] i 由	zuu
+[U鍵補碼] r ⼈人𠆢	zuu
+[U鍵補碼] s 身糸糹饣⾝⽷⺯⻠	zuu
+[V鍵補碼] c 厂⼚	zvv
+[V鍵補碼] g 瓜⽠	zvv
+[V鍵補碼] h 丆	zvv
+[V鍵補碼] i 业	zvv
+[V鍵補碼] j ⺺肀⺕彐⼹钅𫜹𰀄𰀂𬼖⻐	zvv
+[V鍵補碼] m 麻⿇麻	zvv
+[V鍵補碼] s ⾷⻝⻟飠食⻞𩙿	zvv
+[V鍵補碼] v 禺	zvv
+[V鍵補碼] z 爫爪⺤⽖爫⺥𫜵壴	zvv
+[W鍵補碼] c ⼻彳	zww
+[W鍵補碼] d 㠯𠂤	zww
+[W鍵補碼] h ⼾戶	zww
+[W鍵補碼] i 已	zww
+[W鍵補碼] j ⼰己	zww
+[W鍵補碼] l 立立⽴	zww
+[W鍵補碼] m 末	zww
+[W鍵補碼] n ⼥女女	zww
+[W鍵補碼] p ⼃㇒㇓㇁丿	zww
+[W鍵補碼] s ⼺彡𰀪	zww
+[W鍵補碼] w 未	zww
+[X鍵補碼] c 車⾞車叀	zxx
+[X鍵補碼] h ⿊黑	zxx
+[X鍵補碼] i ⽛牙	zxx
+[X鍵補碼] m 皿⽫	zxx
+[X鍵補碼] n ⻦鸟	zxx
+[X鍵補碼] w 乌罒⺫⺲	zxx
+[X鍵補碼] z ⻊⾜𧾷𠂇足	zxx
+[Y鍵補碼] i 亦𰁜	zyy
+[Y鍵補碼] s 三	zyy
+[Y鍵補碼] v ⽉⺝𱼀⺼月	zyy
+[Y鍵補碼] w 王王𤣩⺩	zyy
+[Y鍵補碼] x ⼣夕	zyy

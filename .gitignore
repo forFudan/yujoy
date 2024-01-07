@@ -22,6 +22,7 @@ _site/
 # Ignore distributions
 /dist/*.zip
 /dist/yujoy/*.png
+/dist/yujoy/mabiao
 
 # Ignore extra key maps
 /beta/mabiao/*.png

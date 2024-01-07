@@ -69,13 +69,15 @@ shutil.make_archive(
 )
 
 # %%
-try:
-    remove_tree("./dist/yujoy")
-except:
-    print("Delete incomplete")
-time.sleep(5)
-try:
-    remove_tree("./dist/yujoy")
-except:
-    print("Delete incomplete")
-# %%
+# try:
+#     remove_tree("./dist/yujoy/mabiao")
+#     os.remove(f"./dist/yujoy/yujoy_{version}.png")
+# except:
+#     print("Delete incomplete")
+# time.sleep(5)
+# try:
+#     remove_tree("./dist/yujoy/mabiao")
+#     os.remove(f"./dist/yujoy/yujoy_{version}.png")
+# except:
+#     print("Delete incomplete")
+# # %%
