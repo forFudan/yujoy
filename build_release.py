@@ -10,7 +10,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.1"
+version = "v3.4.2"
 
 # %%
 try:
@@ -68,16 +68,20 @@ shutil.make_archive(
     f"../yuhao/dist/hamster/卿雲爛兮_{version}", "zip", "./dist/yujoy/schema"
 )
 
+copy_tree("./dist/yujoy/schema", "../rime-yujoy/")
+
 # %%
-# try:
-#     remove_tree("./dist/yujoy/mabiao")
-#     os.remove(f"./dist/yujoy/yujoy_{version}.png")
-# except:
-#     print("Delete incomplete")
-# time.sleep(5)
-# try:
-#     remove_tree("./dist/yujoy/mabiao")
-#     os.remove(f"./dist/yujoy/yujoy_{version}.png")
-# except:
-#     print("Delete incomplete")
-# # %%
+try:
+    remove_tree("./dist/yujoy/mabiao")
+    os.remove(f"./dist/yujoy/yujoy_{version}.png")
+    remove_tree("./dist/yujoy/schema")
+except:
+    print("Delete incomplete")
+time.sleep(5)
+try:
+    remove_tree("./dist/yujoy/mabiao")
+    os.remove(f"./dist/yujoy/yujoy_{version}.png")
+    remove_tree("./dist/yujoy/schema")
+except:
+    print("Delete incomplete")
+# %%

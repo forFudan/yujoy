@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.full"
-version: "20240107"
+version: "20240113"
 sort: original
 columns:
   - text
@@ -82705,7 +82705,6 @@ columns:
 𮨢	hbej
 𮋜	hbhk
 𭍠	hbkv
-𮋞	hbkw
 𮧹	hbwj
 𭾀	hbxm
 𭐘	hcua
@@ -82903,6 +82902,7 @@ columns:
 𮮆	htio
 𭮶	htkd
 𮋻	htkl
+𮋞	htkw
 𭏊	htmi
 𮊩	htmi
 𭎻	htmu
@@ -97943,7 +97943,7 @@ columns:
 忹	byw
 福	cfks
 及	cid
-𥛅	cjws
+𥛅	cjst
 駾	clke
 祖	coq
 鼻	csgj
@@ -97952,6 +97952,7 @@ columns:
 𦞵	dafi
 㭉	dam
 勇	dasl
+卽	dbej
 𡷦	dbej
 菌	dbgh
 廾	dc
@@ -97960,7 +97961,6 @@ columns:
 䕡	dekk
 芋	dfem
 𦾱	dfmi
-卽	dfte
 堲	dfth
 䕝	dgvh
 𦰶	dhik
@@ -97973,6 +97973,7 @@ columns:
 𦳕	djdc
 慈	djjn
 茣	dkfm
+勤	dkhs
 蕤	dkps
 芝	dkz
 荓	dldc
@@ -98011,6 +98012,7 @@ columns:
 㺸	esii
 偺	etuj
 扝	fati
+揤	fdbe
 㨮	fdje
 㼛	fdnw
 雃	fdoc
@@ -98040,7 +98042,6 @@ columns:
 㩬	ftvk
 捨	fubs
 巡	fuc
-揤	fvde
 撝	fviw
 掃	fvor
 𦔣	fwkx
@@ -98088,12 +98089,12 @@ columns:
 舁	idc
 叟	idi
 蚈	ifdc
+勺	ifi
 𡧈	ifsk
 䗗	igfd
 蝫	ihjr
 周	ihkv
 彫	ihkw
-勺	iid
 舄	iimb
 𤰶	iis
 蝹	ijxm
@@ -98124,12 +98125,16 @@ columns:
 虩	iwjt
 𠣞	ixc
 寳	iyoj
+卿	jdbb
+卿	jddm
 䵖	jdgn
+𨜮	jdup
 岍	jfdc
 暑	jhjr
 刃	jid
 㫤	jins
 忍	jinx
+卿	jjbb
 弢	jjdi
 㬈	jjxm
 𡷤	jkfm
@@ -98140,10 +98145,6 @@ columns:
 嵮	jrop
 峀	jui
 㬙	jviw
-卿	jwde
-卿	jwde
-𨜮	jwdp
-卿	jwje
 嵼	jwwp
 嵃	jwww
 炭	jxmh
@@ -98240,7 +98241,6 @@ columns:
 䪲	ovjb
 蠁	owii
 将	oyhc
-勤	pasl
 𠕋	pc
 犕	pdwa
 䩶	pjic
@@ -99305,7 +99305,6 @@ columns:
 響	owdj
 剆	idbo
 廊	uidp
-揤	fdbe
 旣	dbte
 朗	idby
 槪	adbe
@@ -105301,3 +105300,4 @@ columns:
 嵫	jdjj
 彫	iakw
 㬙	jiiw
+𥐦	qwj
