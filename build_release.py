@@ -1,16 +1,12 @@
 # %%
 
-from datetime import datetime
-import time
-
-# version = datetime.today().strftime('%Y%m%d')
 import shutil
 import os
 from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.3"
+version = "v3.4.5-beta"
 
 # %%
 try:
@@ -41,6 +37,7 @@ for file_name in [
     "symbols.yaml",
     "yuhao_pinyin.dict.yaml",
     "yuhao_pinyin.schema.yaml",
+    "yuhao/yuhao.symbols.dict.yaml",
     "yuhao/yuhao.extended.dict.yaml",
     "yuhao/yuhao.private.dict.yaml",
     # "yuhao/yuhao.symbols.dict.yaml",

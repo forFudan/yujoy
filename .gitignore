@@ -16,7 +16,7 @@ _site/
 # Ignore locally-generated dictionary files
 /_archived
 /beta/mabiao
-/beta/schema
+/beta/schema/yuhao
 /.mypy_cache
 
 # Ignore distributions
