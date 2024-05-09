@@ -4,7 +4,7 @@
 # 卿雲·全漢字拆分表·香港字形
 # 官方拆分表
 # 朱宇浩 發明
-# 版本 20240428
+# 版本 20240508
 
 # 介紹：
 # 本拆分表包含CJK基本區、CJK擴展A至H區、部首區、兼容區、筆畫區所有漢字的全漢字拆分。
@@ -21,7 +21,7 @@
 
 ---
 name: "yujoy_chaifen_hk"
-version: 20240428
+version: 20240508
 sort: by_weight
 columns:
   - text
@@ -21389,7 +21389,7 @@ columns:
 㔑	[艹𠂤辛刀,DWJJ,chì,CJK-A,3511]
 㔒	[山隹冂刂,JOQO,xí,CJK-A,3512]
 㔓	[千力,JSl,jiǎn,CJK-A,3513]
-㔔	[力口〇,SKKv,,CJK-A,3514]
+㔔	[力口〇,SKKl,,CJK-A,3514]
 㔕	[气力,ISl,jí,CJK-A,3515]
 㔖	[力口乛,SKOi,,CJK-A,3516]
 㔗	[弓{介下}力,JRSl,fèi_bèi_fú,CJK-A,3517]
@@ -22817,7 +22817,7 @@ columns:
 㪰	[文米,ETm,,CJK-A,3AB0]
 㪱	[文冖冂大,EOQM,huàn,CJK-A,3AB1]
 㪲	[⺀十乛,AROi,,CJK-A,3AB2]
-㪳	[⺀十〇,ARKv,,CJK-A,3AB3]
+㪳	[⺀十〇,ARKl,,CJK-A,3AB3]
 㪴	[一兀⺀十,FOAR,jiá,CJK-A,3AB4]
 㪵	[丷キ⺀十,LAAR,bàn,CJK-A,3AB5]
 㪶	[丆日⺀十,VJAR,hú,CJK-A,3AB6]
@@ -98265,7 +98265,7 @@ columns:
 ㇠	[乙,Oi,,筆畫,31E0]
 ㇡	[𠄎,Oi,,筆畫,31E1]
 ㇢	[亅,Oi,,筆畫,31E2]
-㇣	[〇,Kv,,筆畫,31E3]
+㇣	[〇,Kl,,筆畫,31E3]
 豈	[山一口䒑,JFKL,,兼容文字,F900]
 更	[一日乂,FJCi,,兼容文字,F901]
 車	[車,Xc,,兼容文字,F902]
@@ -99260,7 +99260,7 @@ columns:
 鼻	[自田丌,CSOj,,兼容補充,2FA1C]
 𪘀	[齒䒑廾,NLDn,,兼容補充,2FA1D]
 々	[冖丶,OId,,符號標點,3005]
-〇	[〇,Kv,líng_yuán_xīng,符號標點,3007]
+〇	[〇,Kl,líng_yuán_xīng,符號標點,3007]
 〢	[〢,Ls,,符號標點,3022]
 〣	[〣,Ls,,符號標點,3023]
 ㈱	[木牛八,APMb,,圈字月份,3231]

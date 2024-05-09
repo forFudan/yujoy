@@ -11,9 +11,10 @@
 patch:
   schema_list:
     - schema: yujoy
-    - schema: yujoy_sc
-    - schema: yujoy_tc
-    - schema: yujoy_tw
+    - schema: yujoy_sc # 以简化汉字字频设置简码
+    - schema: yujoy_tc # 以大陸傳統漢字字頻設置簡碼
+    - schema: yujoy_tw # 以臺灣傳統漢字字頻設置簡碼
+    - schema: yujoy_fluency # 全碼單字無空格連續輸入
 
 重新部署后即可使用。
 

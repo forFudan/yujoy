@@ -1,0 +1,306 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: yujoy_fluency
+  name: 卿雲·全碼整句
+  version: 20240507
+  author:
+    - 項目策劃 錢多多
+    - 技术支持 forFudan
+    - Rime方案 <https://yuhao.forfudan.com/docs/joy>
+    - 官方QQ群 374630778
+  description: |
+    全碼單字無空格連續輸入模式.
+    - 因爲只輸入全碼單字,不需要額外記憶簡碼和詞語.
+    - 不需要在三碼和四碼後猶豫是否要加空格.
+    - 大拇指的負擔顯著降低.
+    - 速度當降低,達到了1.2584.
+    - 準確性方面,本模式選重率低於打詞,但高於簡碼單字派.
+    - 本模式不會出現打簡碼或打詞時的踩空回删現象.
+    - 本模式允許用户在最短時間内以最小成本實現雙盲打.
+      因爲單字全碼輸入的原故,其準確性很高,出現重碼時也可以通過語句去重.
+      長期來看,本模式無法通過記憶換取額外確定性.
+      長期來看,本模式通過學習適應用户的用字用語習慣換取額外確定性.
+    - 碼長大約在 3.2 左右,略高於簡體優先簡碼派的 3.15.
+      低於繁簡通打簡碼派的 3.25. 高於詞派的 2.5 左右.
+
+  dependencies:
+    - yuhao_pinyin
+    - yujoy_chaifen
+
+switches:
+  - options:
+      - yuhao_chaifen.off
+      - yuhao_chaifen.lv1
+      - yuhao_chaifen.lv2
+      - yuhao_chaifen.lv3
+    states: [〇註解, 一重註解, 二重註解, 三重註解]
+    reset: 0
+  - name: traditionalization
+    states: [简保持, 简转繁]
+    reset: 0
+    # Control+Shift+F
+  - name: simplification
+    states: [繁保持, 繁轉簡]
+    reset: 0
+    # Control+Shift+J
+  - name: ascii_mode
+    reset: 0
+    states: [中文, 西文]
+  - name: full_shape
+    states: [半角, 全角]
+  - name: ascii_punct
+    states: [。，, ．，]
+    reset: 0
+  - options: [utf8, gbk, gb2312]
+    states: [全字集, GBK, GB2312]
+    reset: 0
+  - name: embeded_cands
+    # Control+Shfit+O
+    reset: 0
+    states: [普通候選, 嵌入候選]
+    # Control+Shift+E
+
+engine:
+  processors:
+    - lua_processor@*yuhao.yuhao_switch_proc@yuhao_macro
+    - ascii_composer
+    - recognizer
+    - lua_processor@*yuhao.yuhao_chaifen_processor
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+    # - table_translator
+    - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
+  filters:
+    - charset_filter@gb2312
+    - charset_filter@gbk
+    - simplifier@traditionalize
+    - simplifier@simplify
+    - lua_filter@*yuhao.yuhao_chaifen_filter
+    - lua_filter@*yuhao.yuhao_embeded_cands@embeded_cands
+    - uniquifier
+
+gb2312:
+  tags: [abc, reverse_lookup]
+gbk:
+  tags: [abc, reverse_lookup]
+
+traditionalize:
+  tags: [abc, reverse_lookup]
+  option_name: traditionalization
+  opencc_config: s2t.json
+  tips: all
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+
+simplify:
+  tags: [abc, reverse_lookup]
+  option_name: simplification
+  opencc_config: t2s.json
+  tips: all
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+
+schema_name:
+  code: yujoy
+  spelling: yujoy_chaifen
+
+yuhao_chaifen:
+  lua:
+    switch_key: "Control+c"
+    cycle_key: "Shift+Control+C"
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  initials: yxwvutsrqponmlkjihgfedcba
+  delimiter: " `"
+
+translator:
+  dictionary: yujoy_fluency
+  db_class: tabledb
+  enable_completion: false
+
+reverse_lookup:
+  dictionary: yuhao_pinyin
+  prefix: "z"
+  tips: 〔全拼反查〕
+  closing_tips: 〔反查关闭〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: yuhao.symbols
+  half_shape:
+    "`": "`"
+    "#": "#"
+    "%": "%"
+    "*": "*"
+    "\\": "、"
+    "[": "「"
+    "]": "」"
+    "{": "『"
+    "}": "』"
+    "/": "/"
+    "|": "|"
+
+key_binder:
+  bindings:
+    - { when: always, accept: "Control+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+J", toggle: simplification }
+    - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
+    - { when: always, accept: "Control+Shift+O", toggle: utf8 } # 字符集過濾
+    - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
+    - { when: has_menu, accept: "0", toggle: utf8 } # 字符集過濾
+    - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
+    - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
+    - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
+    # - { when: has_menu, accept: Tab, send: 2 } # 製表符次选
+    - { when: has_menu, accept: minus, send: Page_Up } #減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } #等號下翻頁
+    - { when: has_menu, accept: Escape, send: "Shift+BackSpace" } # 按字删除
+
+recognizer:
+  import_preset: default
+  patterns:
+    uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
+    reverse_lookup: "^z([a-z]+?)*$"
+    punct: "^/([0-9]0?|[A-Za-z]+)?$"
+
+# __patch:
+#   使用八股文語言模型
+#   - grammar:/hant?
+#   - grammar:/hans?
+
+style:
+  horizontal: false
+  inline_preedit: true
+  preedit_type: preview
+  inline_candidate: true
+
+# menu:
+# page_size: 3
+
+# 嵌入候選的顯示配置
+# 默認顯示效果爲:
+# 浩¹ 泃² 竘³
+embeded_cands:
+  option_name: embeded_cands # 嵌入候選開關
+  # index_indicators: [¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁰] # 嵌入候選的序號顯示格式
+  # first_format: "${候選}${Comment}${Seq}" # 首選的渲染格式
+  # next_format: "${候選}${Comment}${Seq}" # 非首選的渲染格式
+  separator: " | " # 候選之間的分隔符
+  index_indicators: [❶, ❷, ❸, ❹, ❺, ❻, ❼, ❽, ❾, ⓿] # 嵌入候選的序號顯示格式
+  first_format: "${候選}${Comment}" # 首選的渲染格式
+  next_format: "${候選}${Comment}" # 非首選的渲染格式
+
+# 自定義宏
+yuhao_macro:
+  funckeys:
+    macro: [0x2f] # 當輸入串以 "/" 開頭時, 認爲是宏調用
+  macros:
+    help:
+      # - { type: tip, name: ❖配置中心 }
+      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
+      - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+      - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+      - {
+          type: radio,
+          names:
+            [
+              utf8,
+              gbk,
+              gb2312,
+            ],
+          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
+        }
+      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
+    date:
+      - { type: eval, name: ☀日期, expr: return os.date("%Y-%m-%d") }
+      - { type: eval, name: ⛅年月日, expr: return os.date("%Y年%m月%d日") }
+    time:
+      - { type: eval, name: ⌚時間, expr: return os.date("%H:%M:%S") }
+      - { type: eval, name: Ⓣ時間, expr: return os.date("%Y%m%d%H%M") }
+      - { type: eval, name: Ⓢ時間戳, expr: return tostring(os.time()) }
+    div:
+      - {
+          type: radio,
+          names:
+            [
+              yuhao_chaifen.off,
+              yuhao_chaifen.lv1,
+              yuhao_chaifen.lv2,
+              yuhao_chaifen.lv3,
+            ],
+          states: [☐☐☐註解, ☑☐☐註解, ☐☑☐註解, ☐☐☑註解],
+        }
+    char:
+      - {
+          type: radio,
+          names:
+            [
+              utf8,
+              gbk,
+              gb2312,
+            ],
+          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
+        }
+    cjk:
+      - {
+          type: radio,
+          names:
+            [
+              utf8,
+              gbk,
+              gb2312,
+            ],
+          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
+        }
+    embed:
+      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
+    trad:
+      - { type: switch, name: traditionalization, states: [☐不轉換, ☑簡轉繁] }
+    simp:
+      - { type: switch, name: simplification, states: [☐不轉換, ☑繁轉簡] }
+    full:
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+    half:
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+    punc:
+      - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+    dot:
+      - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+    dist:
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("librime: [%s]", rime_api.get_rime_version())
+          end
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("distribution: [%s](%s/%s)",
+              rime_api.get_distribution_name(),
+              rime_api.get_distribution_code_name(),
+              rime_api.get_distribution_version())
+          end

@@ -36,7 +36,7 @@ switches:
     reset: 0
     # Control+Shift+D
   - name: yuhao_postpone_full_code
-    reset: 0
+    reset: 1
     states: [原始排序, 全碼後置]
     # Control+Shift+H
   - options:
