@@ -37,6 +37,10 @@ switches:
       - yuhao_chaifen.lv3
     states: [〇註解, 一重註解, 二重註解, 三重註解]
     reset: 0
+  - options: [utf8, gbk, gb2312]
+    states: [全字集, GBK, GB2312]
+    reset: 0
+    # Control+Shfit+O
   - name: traditionalization
     states: [简保持, 简转繁]
     reset: 0
@@ -53,11 +57,7 @@ switches:
   - name: ascii_punct
     states: [。，, ．，]
     reset: 0
-  - options: [utf8, gbk, gb2312]
-    states: [全字集, GBK, GB2312]
-    reset: 0
   - name: embeded_cands
-    # Control+Shfit+O
     reset: 0
     states: [普通候選, 嵌入候選]
     # Control+Shift+E
@@ -69,6 +69,7 @@ engine:
     - recognizer
     - lua_processor@*yuhao.yuhao_chaifen_processor
     - key_binder
+    - lua_processor@*yuhao.yuhao_auto_select
     - speller
     - punctuator
     - selector
@@ -136,6 +137,8 @@ translator:
   dictionary: yujoy_fluency
   db_class: tabledb
   enable_completion: false
+  # preedit_format:
+  #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
 
 reverse_lookup:
   dictionary: yuhao_pinyin
@@ -205,13 +208,14 @@ style:
 # 浩¹ 泃² 竘³
 embeded_cands:
   option_name: embeded_cands # 嵌入候選開關
-  # index_indicators: [¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁰] # 嵌入候選的序號顯示格式
-  # first_format: "${候選}${Comment}${Seq}" # 首選的渲染格式
-  # next_format: "${候選}${Comment}${Seq}" # 非首選的渲染格式
-  separator: " | " # 候選之間的分隔符
-  index_indicators: [❶, ❷, ❸, ❹, ❺, ❻, ❼, ❽, ❾, ⓿] # 嵌入候選的序號顯示格式
-  first_format: "${候選}${Comment}" # 首選的渲染格式
-  next_format: "${候選}${Comment}" # 非首選的渲染格式
+  index_indicators: [¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁰] # 嵌入候選的序號顯示格式
+  first_format: "${候選}${Comment}${Seq}" # 首選的渲染格式
+  next_format: "${候選}${Comment}${Seq}" # 非首選的渲染格式
+  separator: " " # 候選之間的分隔符
+  # index_indicators: [❶, ❷, ❸, ❹, ❺, ❻, ❼, ❽, ❾, ⓿] # 嵌入候選的序號顯示格式
+  # first_format: "${候選}${Comment}" # 首選的渲染格式
+  # next_format: "${候選}${Comment}" # 非首選的渲染格式
+  # separator: " | " # 候選之間的分隔符
 
 # 自定義宏
 yuhao_macro:
@@ -226,12 +230,19 @@ yuhao_macro:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
       - {
           type: radio,
-          names:
-            [
-              utf8,
-              gbk,
-              gb2312,
-            ],
+          names: [utf8, gbk, gb2312],
+          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
+        }
+      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
+    set:
+      # - { type: tip, name: ❖配置中心 }
+      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
+      - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+      - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+      - {
+          type: radio,
+          names: [utf8, gbk, gb2312],
           states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
         }
       - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
@@ -254,26 +265,10 @@ yuhao_macro:
             ],
           states: [☐☐☐註解, ☑☐☐註解, ☐☑☐註解, ☐☐☑註解],
         }
-    char:
-      - {
-          type: radio,
-          names:
-            [
-              utf8,
-              gbk,
-              gb2312,
-            ],
-          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
-        }
     cjk:
       - {
           type: radio,
-          names:
-            [
-              utf8,
-              gbk,
-              gb2312,
-            ],
+          names: [utf8, gbk, gb2312],
           states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
         }
     embed:

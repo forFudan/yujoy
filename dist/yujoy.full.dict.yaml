@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.full"
-version: "20240509"
+version: "20240511"
 sort: original
 columns:
   - text
@@ -81594,8 +81594,8 @@ columns:
 𨧑	tvng
 鐞	tvnh
 𥼙	tvnm
-粶	tvns
 録	tvns
+粶	tvns
 𮬠	tvns
 𤮆	tvnw
 鋟	tvod
