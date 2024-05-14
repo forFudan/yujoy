@@ -6,7 +6,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.5-beta.9"
+version = "v3.4.5-beta.13"
 
 # %%
 try:
@@ -53,18 +53,24 @@ for file_name in [
 ]:
     copyfile(f"../yuhao/beta/schema/{file_name}", f"./dist/yujoy/hotfix/{file_name}")
 
+for file_name in [
+    "yujoy_tc.custom.yaml",
+    "yujoy_tc.schema.yaml",
+    "yujoy_tc.dict.yaml",
+    "yuhao/yujoy_tc.quick.dict.yaml",
+    "yuhao/yujoy_tc.words_literature.dict.yaml",
+    "yuhao/yujoy_tc.words.dict.yaml",
+]:
+    os.remove(f"./dist/yujoy/schema/{file_name}")
+
+for file_name in [
+    "yujoy_tc.schema.yaml",
+]:
+    os.remove(f"./dist/yujoy/hotfix/{file_name}")
+
 # %%
-# shutil.make_archive(f"./dist/yuhao_joy_{version}", "zip", "./dist/yujoy")
 shutil.make_archive(f"./dist/卿雲爛兮_{version}", "zip", "./dist/yujoy")
-# %%
-# copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/yuhao_joy_{version}.zip")
-# copyfile(f"./dist/yuhao_joy_{version}.zip", f"../yuhao/dist/卿雲爛兮_{version}.zip")
-# %%
-# %%
-
 shutil.make_archive(f"./dist/hamster/卿雲爛兮_{version}", "zip", "./dist/yujoy/schema")
-
-copy_tree("./dist/yujoy/schema", "../rime-yujoy/")
 
 # %%
 # try:

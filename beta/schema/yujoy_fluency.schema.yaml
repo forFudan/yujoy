@@ -4,7 +4,7 @@
 schema:
   schema_id: yujoy_fluency
   name: 卿雲·全碼整句
-  version: 20240507
+  version: 20240512
   author:
     - 項目策劃 錢多多
     - 技术支持 forFudan
@@ -37,8 +37,12 @@ switches:
       - yuhao_chaifen.lv3
     states: [〇註解, 一重註解, 二重註解, 三重註解]
     reset: 0
-  - options: [utf8, gbk, gb2312]
-    states: [全字集, GBK, GB2312]
+  - options:
+      - cjk
+      - yuhao_charset_filter_common
+      - yuhao_charset_filter_tonggui
+      - yuhao_charset_filter_harmonic
+    states: [全漢字, 常用字, 通规字, 陸標繁]
     reset: 0
     # Control+Shfit+O
   - name: traditionalization
@@ -69,7 +73,7 @@ engine:
     - recognizer
     - lua_processor@*yuhao.yuhao_chaifen_processor
     - key_binder
-    - lua_processor@*yuhao.yuhao_auto_select
+    # - lua_processor@*yuhao.yuhao_auto_select
     - speller
     - punctuator
     - selector
@@ -88,17 +92,20 @@ engine:
     # - table_translator
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
   filters:
-    - charset_filter@gb2312
-    - charset_filter@gbk
+    - lua_filter@*yuhao.yuhao_charset_filter_common
+    - lua_filter@*yuhao.yuhao_charset_filter_tonggui
+    - lua_filter@*yuhao.yuhao_charset_filter_harmonic
     - simplifier@traditionalize
     - simplifier@simplify
     - lua_filter@*yuhao.yuhao_chaifen_filter
     - lua_filter@*yuhao.yuhao_embeded_cands@embeded_cands
     - uniquifier
 
-gb2312:
+yuhao_charset_filter_tonggui:
   tags: [abc, reverse_lookup]
-gbk:
+yuhao_charset_filter_common:
+  tags: [abc, reverse_lookup]
+yuhao_charset_filter_harmonic:
   tags: [abc, reverse_lookup]
 
 traditionalize:
@@ -171,9 +178,9 @@ key_binder:
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    - { when: always, accept: "Control+Shift+O", toggle: utf8 } # 字符集過濾
+    - { when: always, accept: "Control+Shift+O", toggle: yuhao_charset_filter_common } # 字符集過濾
     - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
-    - { when: has_menu, accept: "0", toggle: utf8 } # 字符集過濾
+    - { when: has_menu, accept: "0", toggle: yuhao_charset_filter_common } # 字符集過濾
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
@@ -228,11 +235,6 @@ yuhao_macro:
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
-      - {
-          type: radio,
-          names: [utf8, gbk, gb2312],
-          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
-        }
       - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
     set:
       # - { type: tip, name: ❖配置中心 }
@@ -240,11 +242,6 @@ yuhao_macro:
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
-      - {
-          type: radio,
-          names: [utf8, gbk, gb2312],
-          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
-        }
       - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
     date:
       - { type: eval, name: ☀日期, expr: return os.date("%Y-%m-%d") }
@@ -268,8 +265,14 @@ yuhao_macro:
     cjk:
       - {
           type: radio,
-          names: [utf8, gbk, gb2312],
-          states: [☐☐全字集, ☑☐GBK, ☐☑GB2312],
+          names:
+            [
+              utf8,
+              yuhao_charset_filter_common,
+              yuhao_charset_filter_tonggui,
+              yuhao_charset_filter_harmonic
+            ],
+          states: [☐☐全漢字, ☐☑常用字, ☑☐通规字, ☑☑陸標繁],
         }
     embed:
       - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
