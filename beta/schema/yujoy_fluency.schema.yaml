@@ -26,8 +26,9 @@ schema:
       低於繁簡通打簡碼派的 3.25. 高於詞派的 2.5 左右.
 
   dependencies:
-    - yuhao_pinyin
+    - yujoy
     - yujoy_chaifen
+    - yuhao_pinyin
 
 switches:
   - options:
@@ -73,7 +74,7 @@ engine:
     - recognizer
     - lua_processor@*yuhao.yuhao_chaifen_processor
     - key_binder
-    # - lua_processor@*yuhao.yuhao_auto_select
+    - lua_processor@*yuhao.yuhao_auto_select
     - speller
     - punctuator
     - selector
@@ -83,13 +84,14 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
+    - afflix_segmentor@translator_common
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - reverse_lookup_translator
     - script_translator
-    # - table_translator
+    - table_translator@yujoy
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
   filters:
     - lua_filter@*yuhao.yuhao_charset_filter_common
@@ -107,6 +109,9 @@ yuhao_charset_filter_common:
   tags: [abc, reverse_lookup]
 yuhao_charset_filter_harmonic:
   tags: [abc, reverse_lookup]
+
+yuhao_auto_select:
+  max_chars: 8
 
 traditionalize:
   tags: [abc, reverse_lookup]
@@ -147,6 +152,17 @@ translator:
   # preedit_format:
   #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
 
+yujoy:
+  dictionary: yujoy
+  db_class: tabledb
+  enable_completion: false
+  enable_sentence: false
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false # 对连续上屏的词自动成词
+  max_phrase_length: 4 # 自动成词的最大词长
+  initial_quality: 1000
+
 reverse_lookup:
   dictionary: yuhao_pinyin
   prefix: "z"
@@ -178,7 +194,11 @@ key_binder:
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    - { when: always, accept: "Control+Shift+O", toggle: yuhao_charset_filter_common } # 字符集過濾
+    - {
+        when: always,
+        accept: "Control+Shift+O",
+        toggle: yuhao_charset_filter_common,
+      } # 字符集過濾
     - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
     - { when: has_menu, accept: "0", toggle: yuhao_charset_filter_common } # 字符集過濾
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
@@ -270,9 +290,15 @@ yuhao_macro:
               utf8,
               yuhao_charset_filter_common,
               yuhao_charset_filter_tonggui,
-              yuhao_charset_filter_harmonic
+              yuhao_charset_filter_harmonic,
             ],
           states: [☐☐全漢字, ☐☑常用字, ☑☐通规字, ☑☑陸標繁],
+        }
+    guji:
+      - {
+          type: switch,
+          name: yuhao_charset_filter_harmonic,
+          states: [☐未篩選, ☑陸標繁],
         }
     embed:
       - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }

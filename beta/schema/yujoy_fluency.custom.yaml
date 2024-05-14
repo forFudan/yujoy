@@ -11,6 +11,7 @@ patch:
   # style/alpha: 0.01 # 隱藏候選欄 Mac
   #
   # translator/enable_completion: true # 逐鍵提示
+  # yuhao_auto_select: max_chars: 8 # 候選區最大字數(自動上屏)
   #
   # 以下開關，0爲第一個，1爲第二個，2爲第三個
   # switches/@0/reset: 1 # [〇註解, 一重註解, 二重註解, 三重註解]

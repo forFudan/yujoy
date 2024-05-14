@@ -1,11 +1,11 @@
 # encoding: utf-8
 #
 # 卿雲·陸繁
-# 版本: 20240514
+# 版本: 20240515
 #
 ---
 name: "yujoy_tc"
-version: "20240514"
+version: "20240515"
 sort: original
 import_tables:
   - yuhao/yujoy_tc.quick
