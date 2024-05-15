@@ -18,6 +18,7 @@ _site/
 /beta/mabiao
 /beta/schema/yuhao
 /.mypy_cache
+/beta/schema/yuhao.essay.txt
 
 # Ignore distributions
 /dist/*.zip

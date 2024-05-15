@@ -3,10 +3,11 @@
 name: yujoy_fluency
 version: "2024.05.07"
 sort: by_weight
-vocabulary: essay_mixed
+vocabulary: yuhao.essay
 import_tables:
   - yuhao/yujoy.frequent
-  - yuhao/yuhao.private # 用户拓展詞庫
+  # - yuhao/yuhao.private # 用户拓展詞庫參與造句
 ...
 
 # 用户可定義簡碼和詞語於下
+# 不推薦定義少於三碼的字詞

@@ -84,7 +84,6 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
-    - afflix_segmentor@translator_common
     - punct_segmentor
     - fallback_segmentor
   translators:
@@ -161,7 +160,6 @@ yujoy:
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
-  initial_quality: 1000
 
 reverse_lookup:
   dictionary: yuhao_pinyin
@@ -204,10 +202,9 @@ key_binder:
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
-    # - { when: has_menu, accept: Tab, send: 2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } #減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } #等號下翻頁
-    - { when: has_menu, accept: Escape, send: "Shift+BackSpace" } # 按字删除
+    - { when: composing, accept: Tab, send: "Shift+BackSpace" } # 逐字删除
 
 recognizer:
   import_preset: default
@@ -216,19 +213,11 @@ recognizer:
     reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
 
-# __patch:
-#   使用八股文語言模型
-#   - grammar:/hant?
-#   - grammar:/hans?
-
 style:
   horizontal: false
   inline_preedit: true
   preedit_type: preview
   inline_candidate: true
-
-# menu:
-# page_size: 3
 
 # 嵌入候選的顯示配置
 # 默認顯示效果爲:
