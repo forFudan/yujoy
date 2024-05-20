@@ -2,7 +2,7 @@
 
 patch:
   # schema/name: 卿雲·全碼整句  # 方案名
-  menu/page_size: 3 # 每頁候選數量
+  menu/page_size: 9 # 每頁候選數量
   # style/horizontal: true  # 橫排候選欄
   # style/inline_preedit: false  # 候選欄内置於輸入界面
   # style/preedit_type: composition  # 候選顯示字母(composition)还是候選(preview)

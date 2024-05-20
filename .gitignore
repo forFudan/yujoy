@@ -14,10 +14,11 @@ _site/
 .DS_Store
 
 # Ignore locally-generated dictionary files
+/.mypy_cache
 /_archived
 /beta/mabiao
 /beta/schema/yuhao
-/.mypy_cache
+/beta/schema/yujoy_chaifen*
 /beta/schema/yuhao.essay.txt
 
 # Ignore distributions

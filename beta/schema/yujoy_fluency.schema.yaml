@@ -91,6 +91,7 @@ engine:
     - reverse_lookup_translator
     - script_translator
     - table_translator@yujoy
+    - script_translator@pinyin
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
   filters:
     - lua_filter@*yuhao.yuhao_charset_filter_common
@@ -102,12 +103,12 @@ engine:
     - lua_filter@*yuhao.yuhao_embeded_cands@embeded_cands
     - uniquifier
 
-yuhao_charset_filter_tonggui:
-  tags: [abc, reverse_lookup]
-yuhao_charset_filter_common:
-  tags: [abc, reverse_lookup]
-yuhao_charset_filter_harmonic:
-  tags: [abc, reverse_lookup]
+# yuhao_charset_filter_tonggui:
+#   tags: [abc, reverse_lookup]
+# yuhao_charset_filter_common:
+#   tags: [abc, reverse_lookup]
+# yuhao_charset_filter_harmonic:
+#   tags: [abc, reverse_lookup]
 
 yuhao_auto_select:
   max_chars: 8
@@ -141,13 +142,14 @@ yuhao_chaifen:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
-  initials: yxwvutsrqponmlkjihgfedcba
+  initials: zyxwvutsrqponmlkjihgfedcba
   delimiter: " `"
 
 translator:
   dictionary: yujoy_fluency
   db_class: tabledb
   enable_completion: false
+  initial_quality: 1
   # preedit_format:
   #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
 
@@ -160,16 +162,24 @@ yujoy:
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
+  initial_quality: 1
 
-reverse_lookup:
+pinyin:
   dictionary: yuhao_pinyin
-  prefix: "z"
-  tips: 〔全拼反查〕
-  closing_tips: 〔反查关闭〕
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+  initial_quality: 0.5
+
+# reverse_lookup:
+#   dictionary: yuhao_pinyin
+#   prefix: "z"
+#   # tips: 〔全拼反查〕
+#   preedit_format:
+#     - xform/([nl])v/$1ü/
+#     - xform/([nl])ue/$1üe/
+#     - xform/([jqxy])v/$1u/
 
 punctuator:
   import_preset: yuhao.symbols
@@ -202,15 +212,16 @@ key_binder:
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
-    - { when: has_menu, accept: minus, send: Page_Up } #減號上翻頁
-    - { when: has_menu, accept: equal, send: Page_Down } #等號下翻頁
-    - { when: composing, accept: Tab, send: "Shift+BackSpace" } # 逐字删除
+    - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+    - { when: has_menu, accept: Tab, send: Escape } # Tab 下翻頁
+    - { when: composing, accept: Escape, send: "Shift+BackSpace" } # 逐字删除
 
 recognizer:
   import_preset: default
   patterns:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
-    reverse_lookup: "^z([a-z]+?)*$"
+    # reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
 
 style:
