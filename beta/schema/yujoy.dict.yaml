@@ -1,11 +1,11 @@
 # encoding: utf-8
 #
 # 卿雲
-# 版本: 20240520
+# 版本: 20240522
 #
 ---
 name: "yujoy"
-version: "20240520"
+version: "20240522"
 sort: original
 import_tables:
   # 以下是簡碼字詞，可注釋掉

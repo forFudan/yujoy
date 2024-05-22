@@ -6,7 +6,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.5-beta.18"
+version = "v3.4.5"
 
 # %%
 try:
