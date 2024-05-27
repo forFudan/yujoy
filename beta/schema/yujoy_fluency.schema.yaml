@@ -157,7 +157,7 @@ yujoy:
   dictionary: yujoy
   db_class: tabledb
   enable_completion: false
-  enable_sentence: false
+  enable_sentence: true
   enable_user_dict: false
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
@@ -170,7 +170,7 @@ pinyin:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
-  initial_quality: 0.5
+  initial_quality: 0
 
 # reverse_lookup:
 #   dictionary: yuhao_pinyin
@@ -189,7 +189,7 @@ punctuator:
     "%": "%"
     "*": "*"
     "\\": "、"
-    "[": "「"
+    "[": ["「", "[]", "[[]]"]
     "]": "」"
     "{": "『"
     "}": "』"
@@ -223,6 +223,7 @@ recognizer:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     # reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
+    number: "^[-+]?[0-9][,.:0-9]*[%]?$"
 
 style:
   horizontal: false
