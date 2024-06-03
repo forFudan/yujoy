@@ -6,7 +6,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.4.5"
+version = "v3.4.6-beta.3"
 
 # %%
 try:
@@ -29,6 +29,7 @@ shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
 shutil.copyfile("./beta/readme.md", f"./dist/yujoy/readme.txt")
 copy_tree("./beta/mabiao/", "./dist/yujoy/mabiao/")
 copy_tree("./beta/schema/", "./dist/yujoy/schema/")
+copy_tree("./beta/custom/", "./dist/yujoy/custom/")
 copy_tree("./beta/hotfix/", "./dist/yujoy/hotfix/")
 copy_tree("./beta/trime/", "./dist/yujoy/trime/")
 
@@ -46,15 +47,6 @@ for file_name in [
     copyfile(f"../yuhao/beta/schema/{file_name}", f"./dist/yujoy/schema/{file_name}")
 
 for file_name in [
-    "default.yaml",
-    "key_bindings.yaml",
-    "punctuation.yaml",
-    "symbols.yaml",
-]:
-    copyfile(f"../yuhao/beta/schema/{file_name}", f"./dist/yujoy/hotfix/{file_name}")
-
-for file_name in [
-    "yujoy_tc.custom.yaml",
     "yujoy_tc.schema.yaml",
     "yujoy_tc.dict.yaml",
     "yuhao/yujoy_tc.quick.dict.yaml",

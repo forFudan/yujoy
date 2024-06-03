@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.full"
-version: "20240522"
+version: "20240528"
 sort: original
 columns:
   - text
@@ -5790,6 +5790,7 @@ columns:
 𢟹	blhc
 𢙧	blhe
 惞	blhq
+𥊷	blhs
 𡇽	blht
 𩧾	blht
 𪬉	blht
@@ -10855,7 +10856,6 @@ columns:
 𧄈	ddki
 𠭎	ddkk
 𠫅	ddkl
-𧆍	ddkl
 𰱥	ddkn
 𫉳	ddko
 𭃵	ddko
@@ -13449,7 +13449,6 @@ columns:
 𭽗	dmi
 蛬	dmic
 𫊲	dmic
-𦏞	dmid
 𰱙	dmid
 恭	dmii
 䓎	dmii
@@ -15184,6 +15183,7 @@ columns:
 𰰨	dubb
 𦸖	dubd
 𦾰	dubg
+𧁶	dubh
 𬞙	dubj
 𮑯	dubk
 𦺗	dubl
@@ -15295,6 +15295,7 @@ columns:
 𮑝	dujx
 䓬	dujz
 𧅂	duka
+𧆍	duki
 𧁺	dukk
 𧁭	dukl
 𧄑	dukl
@@ -15480,7 +15481,6 @@ columns:
 𱿃	duws
 𬞍	duww
 𮒕	duww
-𧁶	duxh
 𮓁	duxh
 𦱣	duxm
 𦸟	duyd
@@ -16397,6 +16397,7 @@ columns:
 佪	ebkv
 𠯒	ebkv
 貨	eblb
+𨷅	eblh
 㐷	ebm
 𪜶	ebmd
 𩲏	ebmg
@@ -18945,6 +18946,7 @@ columns:
 𰿗	eub
 伦	eubb
 𠉆	eubb
+𨷭	eubh
 倽	eubs
 𠊒	eubt
 这	euc
@@ -19096,7 +19098,6 @@ columns:
 侂	euwg
 侫	euwn
 𫢗	euws
-𨷭	euxh
 𱉔	euxn
 𠍇	euya
 𠎀	euya
@@ -19376,7 +19377,6 @@ columns:
 侟	exll
 𠋮	exlu
 𲈨	exm
-𨷅	exmh
 𪉃	exn
 𬷼	exn
 𬸀	exn
@@ -24246,7 +24246,9 @@ columns:
 簂	gbkf
 𮅊	gbkv
 𥱽	gble
+𡮝	gblh
 𮆱	gblj
+𭟚	gbln
 笃	gbm
 秵	gbmd
 筃	gbmd
@@ -28187,7 +28189,6 @@ columns:
 𮆎	gxgp
 黨	gxh
 䆀	gxh
-𡮝	gxh
 𥳬	gxh
 篿	gxhc
 𥡵	gxhc
@@ -28226,7 +28227,6 @@ columns:
 𥬢	gxng
 穗	gxnx
 𫂠	gxnx
-𭟚	gxnx
 𣮲	gxny
 䉐	gxog
 𥴸	gxoi
@@ -29209,6 +29209,7 @@ columns:
 𡋂	hgak
 𡐃	hgat
 𰊺	hgbj
+𤐈	hgbm
 毂	hgc
 𡓞	hgcm
 墲	hgdm
@@ -29303,7 +29304,6 @@ columns:
 𱅮	hgwo
 𰋆	hgxh
 𩪻	hgxk
-𤐈	hgxm
 𡔄	hgxr
 𡋎	hhbb
 𧻩	hhbb
@@ -55238,7 +55238,6 @@ columns:
 𣾟	ndbo
 𤅝	ndbp
 𣹢	ndbr
-𬉩	ndcc
 渟	ndcd
 𱥄	ndcd
 渮	ndck
@@ -55510,7 +55509,6 @@ columns:
 𬻭	ndrd
 𱧏	ndrd
 㵁	ndre
-𤅗	ndri
 淿	ndrj
 𬉠	ndrl
 𮳙	ndro
@@ -59130,6 +59128,8 @@ columns:
 淖	nujz
 𱨡	nuka
 𣿤	nuki
+𤅗	nuki
+𬉩	nuki
 𣸾	nukm
 𤊁	nukm
 惉	nukn
@@ -84094,6 +84094,7 @@ columns:
 𦟀	ukya
 𦢼	ukya
 𣜄	ukyi
+𦏞	ukyi
 𦝠	ukyr
 䊨	ukys
 絹	ukyv
@@ -85515,6 +85516,8 @@ columns:
 䋖	uvak
 綵	uvam
 𬗹	uvaw
+𦆑	uvbh
+𬘉	uvbh
 𬗟	uvbk
 廐	uvde
 𪪗	uvde
@@ -85659,8 +85662,6 @@ columns:
 𰫝	uvwp
 𦅈	uvws
 𢉏	uvxd
-𦆑	uvxh
-𬘉	uvxh
 𮉐	uvxh
 𮉜	uvxh
 𦇌	uvxi
@@ -95065,7 +95066,6 @@ columns:
 𨋓	xqs
 𫅂	xqs
 䁿	xqsm
-𥊷	xqsm
 𪑥	xqsm
 𰸗	xqtm
 𪒣	xquq

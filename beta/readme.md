@@ -12,11 +12,14 @@ patch:
   schema_list:
     - schema: yujoy
     - schema: yujoy_sc # 以简化汉字字频设置简码
-    - schema: yujoy_tc # 以大陸傳統漢字字頻設置簡碼
     - schema: yujoy_tw # 以臺灣傳統漢字字頻設置簡碼
     - schema: yujoy_fluency # 全碼單字無空格連續輸入
 
 重新部署后即可使用。
+
+## custom
+
+/custom 中的文件爲 Rime 輸入法各平臺（小狼毫、鼠鬚管）方案的自定義設定。
 
 ## hotfix
 

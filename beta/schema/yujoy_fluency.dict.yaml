@@ -6,7 +6,6 @@ sort: by_weight
 vocabulary: yuhao.essay
 import_tables:
   - yuhao/yujoy.frequent
-  - yuhao/yuhao.private # 用户拓展詞庫參與造句
 ...
 
 # 用户可定義簡碼和詞語於下
