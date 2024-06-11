@@ -248,6 +248,7 @@ recognizer:
     # reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     number: "^[-+]?[0-9][,.:0-9]*[%]?$"
+    macro_unicode: "^/uni(/[a-zA-Z0-9]*)*$"
 
 style:
   horizontal: false
@@ -353,3 +354,7 @@ yuhao_macro:
               rime_api.get_distribution_code_name(),
               rime_api.get_distribution_version())
           end
+    uni:
+      - type: eval
+        hijack: true
+        expr: return require("yuhao.core").unicode()

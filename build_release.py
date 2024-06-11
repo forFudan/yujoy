@@ -27,11 +27,14 @@ shutil.copyfile(
 
 shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
 shutil.copyfile("./beta/readme.md", f"./dist/yujoy/readme.txt")
+shutil.copyfile("../../Programs/YuhaoRoots/Yuniversus.ttf", "./beta/font/Yuniversus.ttf")
+
 copy_tree("./beta/mabiao/", "./dist/yujoy/mabiao/")
 copy_tree("./beta/schema/", "./dist/yujoy/schema/")
 copy_tree("./beta/custom/", "./dist/yujoy/custom/")
 copy_tree("./beta/hotfix/", "./dist/yujoy/hotfix/")
 copy_tree("./beta/trime/", "./dist/yujoy/trime/")
+copy_tree("./beta/font/", "./dist/yustar/font/")
 
 # %%
 # copy yuhao

@@ -19,14 +19,14 @@ schema:
     - 準確性方面,本模式選重率低於打詞,但高於簡碼單字派.
     - 本模式不會出現打簡碼或打詞時的踩空回删現象.
     - 本模式允許用户在最短時間内以最小成本實現雙盲打.
-      因爲單字全碼輸入的原故,其準確性很高,出現重碼時也可以通過語句去重.
-      長期來看,本模式無法通過記憶換取額外確定性.
-      長期來看,本模式通過學習適應用户的用字用語習慣換取額外確定性.
+    - 因爲單字全碼輸入的原故,其準確性很高,出現重碼時也可以通過語句去重.
+    - 四碼及以下,固定字頻詞頻,允許簡碼字詞,以兼容四碼定長習慣,保證確定性.
     - 碼長大約在 3.2 左右,略高於簡體優先簡碼派的 3.15.
       低於繁簡通打簡碼派的 3.25. 高於詞派的 2.5 左右.
 
   dependencies:
     - yujoy
+    - yujoy_full
     - yujoy_chaifen
     - yuhao_pinyin
 
@@ -84,8 +84,26 @@ engine:
   translators:
     - punct_translator
     - reverse_lookup_translator
-    - script_translator
+    ##########
+    # 翻譯器 #
+    ##########
+    # 四碼及以下,固定字頻詞頻,以兼容四碼定長習慣,保證確定性.
+    # 直接使用四碼定長字典.
     - table_translator@yujoy
+    #
+    # 全拼的模式,對非預設短語和用户習語進行自動調頻.
+    # 由於分割編碼時不穩定,常有生僻字跳出,故而只對常用字進行成句.
+    # 只對常用字進行成句,會使某些專有名詞不出現,可通過碼表翻譯器解決.
+    - script_translator
+    #
+    # 全拼輸入.
+    - script_translator@pinyin
+    #
+    # 四碼以上,固定詞頻的連續輸入.允許聯想長詞以快速上屏.
+    # 直接使用全碼單字字典,允許成句.分割編碼時,極少出現生僻字.
+    # 對於排在第二項的兩碼字根不會成句,如[上巳],可通過編碼翻譯器解決.
+    # 未完全匹配,則會出現字母串不斷閃出,影響視覺體驗,可通過編碼翻譯器解決.
+    - table_translator@yujoy_full
   filters:
     - lua_filter@yuhao_charset_filter_common
     - lua_filter@yuhao_charset_filter_tonggui
@@ -94,13 +112,6 @@ engine:
     - simplifier@simplify
     - lua_filter@yuhao_chaifen
     - uniquifier
-
-yuhao_charset_filter_tonggui:
-  tags: [abc, reverse_lookup]
-yuhao_charset_filter_common:
-  tags: [abc, reverse_lookup]
-yuhao_charset_filter_harmonic:
-  tags: [abc, reverse_lookup]
 
 yuhao_auto_select:
   max_chars: 8
@@ -141,6 +152,7 @@ translator:
   dictionary: yujoy_fluency
   db_class: tabledb
   enable_completion: false
+  initial_quality: 10
   # preedit_format:
   #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
 
@@ -153,16 +165,36 @@ yujoy:
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
+  initial_quality: 4
 
-reverse_lookup:
+pinyin:
   dictionary: yuhao_pinyin
-  prefix: "z"
-  tips: 〔全拼反查〕
-  closing_tips: 〔反查关闭〕
+  enable_completion: false
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+  initial_quality: 2
+
+yujoy_full:
+  dictionary: yujoy_full
+  db_class: tabledb
+  enable_completion: true
+  enable_sentence: true
+  enable_user_dict: true
+  enable_encoder: true
+  encode_commit_history: false # 对连续上屏的词自动成词
+  max_phrase_length: 4 # 自动成词的最大词长
+  initial_quality: 0
+
+# reverse_lookup:
+#   dictionary: yuhao_pinyin
+#   prefix: "z"
+#   # tips: 〔全拼反查〕
+#   preedit_format:
+#     - xform/([nl])v/$1ü/
+#     - xform/([nl])ue/$1üe/
+#     - xform/([jqxy])v/$1u/
 
 punctuator:
   import_preset: yuhao.symbols
@@ -194,16 +226,18 @@ key_binder:
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
-    - { when: has_menu, accept: minus, send: Page_Up } #減號上翻頁
-    - { when: has_menu, accept: equal, send: Page_Down } #等號下翻頁
-    - { when: composing, accept: Tab, send: "Shift+BackSpace" } # 按字删除
+    - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+    - { when: has_menu, accept: Tab, send: Escape } # Tab 下翻頁
+    - { when: composing, accept: Escape, send: "Shift+BackSpace" } # 逐字删除
 
 recognizer:
   import_preset: default
   patterns:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
-    reverse_lookup: "^z([a-z]+?)*$"
+    # reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
+    number: "^[-+]?[0-9][,.:0-9]*[%]?$"
 
 style:
   horizontal: false
