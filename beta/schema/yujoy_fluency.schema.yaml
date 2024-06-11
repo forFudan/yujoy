@@ -357,4 +357,4 @@ yuhao_macro:
     uni:
       - type: eval
         hijack: true
-        expr: return require("yuhao.core").unicode()
+        expr: return require("yuhao.yuhao_core").unicode()
