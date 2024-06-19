@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.full"
-version: "20240612"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -16681,6 +16681,8 @@ columns:
 𫶧	ee
 ⼉	ee
 	ee
+	ee
+	ee
 佻	eeaa
 𨴡	eeaa
 𫔤	eeak
@@ -22080,6 +22082,7 @@ columns:
 抌	foee
 𢪚	foee
 𢭪	foee
+𫾇	foej
 𪮥	foek
 𢰺	foem
 𪮕	fof
@@ -22160,7 +22163,6 @@ columns:
 𡙱	fomd
 𤍐	fomh
 𢹛	fomi
-𫾇	fomj
 𢰼	fomq
 拯	fonf
 𢳱	foni
@@ -26556,7 +26558,9 @@ columns:
 𥝴	goee
 𥫹	goee
 𫀲	goee
+𥴄	goej
 𮡗	goel
+𥭹	goey
 鿠	gofc
 𥮸	gofi
 笥	gofk
@@ -26645,9 +26649,7 @@ columns:
 𫙋	gomg
 𤉌	gomh
 䉳	gomi
-𥴄	gomj
 𥵲	gomo
-𥭹	gomy
 䇰	gonf
 䈄	gonj
 篜	gonm
@@ -26674,7 +26676,6 @@ columns:
 𰨹	goqj
 𩾥	goqn
 𪁐	goqn
-𭯟	goqt
 𱸔	gore
 𭘢	gorj
 𥞿	gorr
@@ -26700,6 +26701,7 @@ columns:
 𥡥	gotn
 𥷢	goto
 㩿	gotp
+𭯟	gotp
 𥴣	gotq
 𥢋	gots
 迄	gouc
@@ -31040,6 +31042,7 @@ columns:
 𮰮	hqdl
 㙉	hqdm
 𡍟	hqdn
+𡑕	hqea
 纛	hqeu
 𪢽	hqf
 𣖫	hqfa
@@ -31120,7 +31123,6 @@ columns:
 𰊹	hqvl
 塢	hqw
 𧽋	hqw
-𡑕	hqwa
 垅	hqwp
 𭎷	hqxm
 毐	hqxz
@@ -40401,6 +40403,7 @@ columns:
 𨐺	jqdl
 晪	jqdm
 𱜎	jqds
+𣌬	jqef
 𡴇	jqf
 𡵞	jqf
 𱛗	jqfi
@@ -40502,7 +40505,6 @@ columns:
 𨔒	jquu
 𭃘	jquu
 嵨	jqw
-𣌬	jqwf
 昽	jqwp
 𰎎	jqwp
 𱛓	jqwp
@@ -57793,10 +57795,14 @@ columns:
 沈	noee
 㳳	noee
 沈	noee
+𬈯	noek
 𲆯	noel
 𤉠	noem
 𬈑	noem
+𱧑	noem
+𱦴	noen
 𨧁	noet
+𱧐	noew
 𥁭	noex
 𧖶	noex
 𰛨	nofb
@@ -57869,15 +57875,11 @@ columns:
 𤌺	nomh
 㶍	nomi
 滘	nomk
-𬈯	nomk
 𣸧	noml
 𣵫	nomm
-𱧑	nomm
-𱦴	nomn
 𪇶	nomq
 𬈐	noms
 𰜯	noms
-𱧐	nomw
 洆	nonf
 𬆇	nonh
 𣼈	noni
@@ -60536,6 +60538,7 @@ columns:
 鮡	oeaa
 䑬	oeaa
 𪳨	oeaa
+𭂂	oead
 𩽥	oeal
 鮴	oeam
 𬵬	oeam
@@ -60546,11 +60549,14 @@ columns:
 𱼺	oebr
 纽	oec
 𱆧	oec
+𮉾	oect
 𦨕	oedi
 𠓎	oedt
 克	oee
 冘	oee
+㓁	oee
 𠑷	oee
+⺳	oee
 ⺴	oee
 𦩙	oeec
 缑	oeem
@@ -60563,6 +60569,7 @@ columns:
 𠖑	oeff
 𠒐	oefi
 𫶸	oefo
+𱺼	oefo
 兞	oegm
 𤿥	oegp
 𱺠	oegu
@@ -60583,6 +60590,7 @@ columns:
 兛	oejq
 𩻾	oejr
 𭖊	oejs
+𫅃	oejz
 𦨷	oekg
 鮘	oeki
 𦨮	oeki
@@ -60595,6 +60603,7 @@ columns:
 𮶃	oela
 𪞔	oeld
 𠒙	oelj
+𦌛	oelj
 𡙝	oelm
 𩺟	oelm
 䱔	oelt
@@ -60616,10 +60625,12 @@ columns:
 剋	oeod
 𠛌	oeod
 兢	oeoe
+𦊙	oeog
 𠓏	oeor
 𠓈	oeov
 𩵫	oeov
 邥	oepf
+𤘰	oepn
 组	oeq
 冝	oeq
 䱉	oeq
@@ -60628,8 +60639,10 @@ columns:
 鮲	oeqq
 𫄢	oeqq
 𬘧	oerj
+𦊇	oerm
 𮬔	oerr
 兙	oers
+𦉲	oers
 勀	oesl
 勊	oesl
 𠠹	oesl
@@ -60640,6 +60653,7 @@ columns:
 𨑻	oeuc
 𫐦	oeuc
 𢻼	oeud
+𦋐	oeuj
 𩼿	oeuy
 𭁾	oevd
 𱆷	oevd
@@ -60652,6 +60666,7 @@ columns:
 𰬿	oevm
 𩻏	oevp
 𪩯	oevp
+𮊏	oevv
 纹	oew
 魰	oew
 䌶	oewp
@@ -61494,6 +61509,7 @@ columns:
 𠢰	ojss
 鰡	ojst
 𡕳	ojst
+𡕱	ojtp
 𩷊	ojtp
 𬵑	ojuc
 𦨽	ojuo
@@ -61902,7 +61918,6 @@ columns:
 ⺈	om
 ⼍	om
 𮰅	omaa
-𭂂	omad
 罕	omag
 𣮥	omag
 𱆱	omag
@@ -61911,10 +61926,8 @@ columns:
 罙	omam
 𲅢	omau
 焦	omb
-㓁	omb
 𩵒	omb
 𰃟	omb
-⺳	omb
 𩸕	omc
 𬘾	omcc
 𩵹	omci
@@ -61922,7 +61935,6 @@ columns:
 𠖏	omck
 𩸞	omck
 䱞	omcs
-𮉾	omct
 奐	omd
 𡗠	omd
 𦨐	omd
@@ -61946,7 +61958,6 @@ columns:
 𠀜	omfi
 𱪶	omfj
 𩹀	omfm
-𱺼	omfo
 绔	omfs
 舿	omfs
 鮬	omfs
@@ -61975,7 +61986,6 @@ columns:
 𩸂	omjn
 鰆	omjr
 𤳮	omjs
-𫅃	omjz
 𪡜	omke
 𰭉	omke
 𪞑	omkl
@@ -61990,7 +62000,6 @@ columns:
 𦪕	omli
 𨣐	omli
 𩻻	omli
-𦌛	omlj
 鱔	omlk
 缮	omlk
 𭼅	omln
@@ -62011,22 +62020,18 @@ columns:
 𬘷	omng
 劁	omod
 𱻁	omoe
-𦊙	omog
 𧖝	omoi
 𱬳	omom
 𰬮	omop
 𱲕	omox
 𱲖	omox
 𨝱	ompf
-𤘰	ompn
 𪆔	omqm
 鷦	omqn
 𪆅	omqn
 𦊅	omqq
 𲍃	omrk
-𦊇	omrm
 䱝	omrs
-𦉲	omrs
 𦩖	omrs
 𰬤	omrs
 𥎻	oms
@@ -62040,7 +62045,6 @@ columns:
 𬜔	omuc
 𱜠	omuh
 𧔶	omui
-𦋐	omuj
 绤	omuk
 𩷝	omuk
 𮎐	omuk
@@ -62053,7 +62057,6 @@ columns:
 顦	omvl
 𱂝	omvl
 𥐂	omvv
-𮊏	omvv
 艤	omwk
 䲑	omwk
 𩹖	omwn
@@ -62245,6 +62248,7 @@ columns:
 𬘘	ooee
 魫	ooee
 𫶶	ooee
+𮗏	ooeg
 𩹉	oof
 𢁅	oofd
 𬜞	ooff
@@ -62310,7 +62314,6 @@ columns:
 𤈖	oomb
 𤒏	oomb
 𨾗	oomd
-𮗏	oomg
 㸈	oomh
 𧍾	oomi
 𡙟	oomm
@@ -62533,14 +62536,12 @@ columns:
 𨿇	oquu
 𩶩	oquu
 鰞	oqw
-𠭠	oqwd
 𫰗	oqwn
 𦨩	oqwp
 𱺕	oqwp
 𮰄	oqwp
 𢃁	oqwr
 𩷙	oqws
-𡕱	oqwt
 𥂏	oqxm
 𥂐	oqxm
 𭂅	oqxn
@@ -62819,6 +62820,7 @@ columns:
 𫙖	otbb
 𱺙	otbb
 䲁	otch
+𠭠	otdi
 𩷅	otdi
 𩺱	otdk
 䱼	otdl
@@ -66512,6 +66514,7 @@ columns:
 𢑓	qeci
 𱮰	qedv
 𠒎	qee
+𦉪	qee
 猴	qeem
 䳧	qeem
 𱴞	qeem
@@ -66519,6 +66522,7 @@ columns:
 𭸝	qefc
 𤡲	qefd
 𥖆	qefd
+𱺿	qefh
 𤡌	qefi
 𮀟	qegu
 䂤	qehc
@@ -66556,6 +66560,7 @@ columns:
 𤞘	qenr
 𢟆	qenx
 𪻉	qeoc
+𠕢	qepl
 𤞗	qepn
 狙	qeq
 砠	qeq
@@ -69394,9 +69399,6 @@ columns:
 𡯎	qws
 𥐲	qwsi
 𥐥	qwsj
-𱺿	qwth
-𦉪	qwti
-𠕢	qwtl
 磻	qwts
 㺕	qwts
 磻	qwts
@@ -87979,6 +87981,7 @@ columns:
 𰻃	vodu
 㼉	voee
 𬬵	voee
+𤔸	voeh
 𢑟	voek
 𣁍	voew
 飼	vofk
@@ -88038,7 +88041,6 @@ columns:
 𨱓	vomb
 𩝆	vomd
 𤈚	vomh
-𤔸	vomh
 𪇈	vonq
 𢑙	vons
 愛	vont
@@ -91706,6 +91708,7 @@ columns:
 𥜻	wqdm
 𡤩	wqdo
 𢖢	wqdt
+𥤢	wqee
 妦	wqf
 𦥺	wqfc
 𢔨	wqfh
@@ -91784,7 +91787,6 @@ columns:
 𥪬	wqwn
 𪫌	wqwp
 娏	wqws
-𥤢	wqwt
 𢓯	wqyw
 𫝮	wral
 娴	wram
