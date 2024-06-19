@@ -34,7 +34,7 @@ copy_tree("./beta/schema/", "./dist/yujoy/schema/")
 copy_tree("./beta/custom/", "./dist/yujoy/custom/")
 copy_tree("./beta/hotfix/", "./dist/yujoy/hotfix/")
 copy_tree("./beta/trime/", "./dist/yujoy/trime/")
-copy_tree("./beta/font/", "./dist/yustar/font/")
+copy_tree("./beta/font/", "./dist/yujoy/font/")
 
 # %%
 # copy yuhao
