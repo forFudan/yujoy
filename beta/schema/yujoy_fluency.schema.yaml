@@ -3,7 +3,7 @@
 
 schema:
   schema_id: yujoy_fluency
-  name: 卿雲·全碼整句
+  name: 卿雲·全碼連打
   version: 20240512
   author:
     - 項目策劃 錢多多
@@ -54,6 +54,10 @@ switches:
     states: [繁保持, 繁轉簡]
     reset: 0
     # Control+Shift+J
+  - name: yuhao_autocompletion_filter
+    reset: 0
+    states: [輸入預測, 精確匹配]
+    # Control+Shift+Y
   - name: ascii_mode
     reset: 0
     states: [中文, 西文]
@@ -62,10 +66,6 @@ switches:
   - name: ascii_punct
     states: [。，, ．，]
     reset: 0
-  - name: embeded_cands
-    reset: 0
-    states: [普通候選, 嵌入候選]
-    # Control+Shift+E
 
 engine:
   processors:
@@ -88,7 +88,6 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - reverse_lookup_translator
     ##########
     # 翻譯器 #
     ##########
@@ -100,6 +99,7 @@ engine:
     # 由於分割編碼時不穩定,常有生僻字跳出,故而只對常用字進行成句.
     # 只對常用字進行成句,會使某些專有名詞不出現,可通過碼表翻譯器解決.
     - script_translator
+    - script_translator@translator_extended
     #
     # 全拼輸入.
     - script_translator@pinyin
@@ -112,21 +112,20 @@ engine:
     #
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
   filters:
-    # - lua_filter@*yuhao.yuhao_autocompletion_filter_conditional
+    - lua_filter@*yuhao.yuhao_autocompletion_filter
     - lua_filter@*yuhao.yuhao_charset_filter_common
     - lua_filter@*yuhao.yuhao_charset_filter_tonggui
     - lua_filter@*yuhao.yuhao_charset_filter_harmonic
     - simplifier@traditionalize
     - simplifier@simplify
     - lua_filter@*yuhao.yuhao_chaifen_filter
-    - lua_filter@*yuhao.yuhao_embeded_cands@embeded_cands
     - uniquifier
 
 yuhao_auto_select:
   max_chars: 8
 
 traditionalize:
-  tags: [abc, reverse_lookup]
+  tags: [abc]
   option_name: traditionalization
   opencc_config: s2t.json
   tips: all
@@ -135,7 +134,7 @@ traditionalize:
     - xform/$/〕/
 
 simplify:
-  tags: [abc, reverse_lookup]
+  tags: [abc]
   option_name: simplification
   opencc_config: t2s.json
   tips: all
@@ -161,6 +160,14 @@ translator:
   dictionary: yujoy_fluency
   db_class: tabledb
   enable_completion: false
+  initial_quality: 8
+  # preedit_format:
+  #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
+
+translator_extended:
+  dictionary: yujoy_full
+  db_class: tabledb
+  enable_completion: false
   initial_quality: 4
   # preedit_format:
   #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
@@ -174,7 +181,7 @@ yujoy:
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
-  initial_quality: 8
+  initial_quality: 16
 
 pinyin:
   dictionary: yuhao_pinyin
@@ -190,20 +197,11 @@ yujoy_full:
   db_class: tabledb
   enable_completion: true
   enable_sentence: true
-  enable_user_dict: true
-  enable_encoder: true
+  enable_user_dict: false
+  enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
   initial_quality: 0
-
-# reverse_lookup:
-#   dictionary: yuhao_pinyin
-#   prefix: "z"
-#   # tips: 〔全拼反查〕
-#   preedit_format:
-#     - xform/([nl])v/$1ü/
-#     - xform/([nl])ue/$1üe/
-#     - xform/([jqxy])v/$1u/
 
 punctuator:
   import_preset: yuhao.symbols
@@ -231,9 +229,13 @@ key_binder:
         accept: "Control+Shift+O",
         toggle: yuhao_charset_filter_common,
       } # 字符集過濾
-    - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
     - { when: has_menu, accept: "0", toggle: yuhao_charset_filter_common } # 字符集過濾
     - { when: has_menu, accept: "/", toggle: yuhao_chaifen.off } # 拆分
+    - {
+        when: always,
+        accept: "Control+Shift+Y",
+        toggle: yuhao_autocompletion_filter,
+      } # 輸入預測
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
@@ -245,7 +247,6 @@ recognizer:
   import_preset: default
   patterns:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
-    # reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     number: "^[-+]?[0-9][,.:0-9]*[%]?$"
     macro_unicode: "^/uni(/[a-zA-Z0-9]*)*$"
@@ -255,20 +256,6 @@ style:
   inline_preedit: true
   preedit_type: preview
   inline_candidate: true
-
-# 嵌入候選的顯示配置
-# 默認顯示效果爲:
-# 浩¹ 泃² 竘³
-embeded_cands:
-  option_name: embeded_cands # 嵌入候選開關
-  index_indicators: [¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁰] # 嵌入候選的序號顯示格式
-  first_format: "${候選}${Comment}${Seq}" # 首選的渲染格式
-  next_format: "${候選}${Comment}${Seq}" # 非首選的渲染格式
-  separator: " " # 候選之間的分隔符
-  # index_indicators: [❶, ❷, ❸, ❹, ❺, ❻, ❼, ❽, ❾, ⓿] # 嵌入候選的序號顯示格式
-  # first_format: "${候選}${Comment}" # 首選的渲染格式
-  # next_format: "${候選}${Comment}" # 非首選的渲染格式
-  # separator: " | " # 候選之間的分隔符
 
 # 自定義宏
 yuhao_macro:
@@ -281,14 +268,12 @@ yuhao_macro:
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
-      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
     set:
       # - { type: tip, name: ❖配置中心 }
       - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁轉簡] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
-      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
     date:
       - { type: eval, name: ☀日期, expr: return os.date("%Y-%m-%d") }
       - { type: eval, name: ⛅年月日, expr: return os.date("%Y年%m月%d日") }
@@ -326,8 +311,6 @@ yuhao_macro:
           name: yuhao_charset_filter_harmonic,
           states: [☐未篩選, ☑陸標繁],
         }
-    embed:
-      - { type: switch, name: embeded_cands, states: [☐嵌入, ☑嵌入] }
     trad:
       - { type: switch, name: traditionalization, states: [☐不轉換, ☑簡轉繁] }
     simp:

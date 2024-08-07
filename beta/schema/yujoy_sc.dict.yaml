@@ -1,11 +1,11 @@
 # encoding: utf-8
 #
 # 卿雲·陆简
-# 版本: 20240619
+# 版本: 20240807
 #
 ---
 name: "yujoy_sc"
-version: "20240619"
+version: "20240807"
 sort: original
 import_tables:
   - yuhao/yujoy_sc.quick
@@ -33,7 +33,7 @@ encoder:
       formula: "AaAbBaBb"
     - length_equal: 3
       formula: "AaBaCaCb"
-    - length_in_range: [4, 20]
+    - length_in_range: [4, 24]
       formula: "AaBaCaZa"
 ...
 

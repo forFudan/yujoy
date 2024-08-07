@@ -6,7 +6,7 @@ from distutils.dir_util import copy_tree
 from distutils.dir_util import remove_tree
 from shutil import copyfile
 
-version = "v3.5.0"
+version = "v3.6.0-rc"
 
 # %%
 try:
@@ -27,7 +27,7 @@ shutil.copyfile(
 
 shutil.copyfile("./image/yujoy.png", f"./dist/yujoy/yujoy_{version}.png")
 shutil.copyfile("./beta/readme.md", f"./dist/yujoy/readme.txt")
-shutil.copyfile("../../Programs/YuhaoRoots/Yuniversus.ttf", "./beta/font/Yuniversus.ttf")
+shutil.copyfile("../../Programs/YuhaoInputMethod/YuhaoRoots/Yuniversus.ttf", "./beta/font/Yuniversus.ttf")
 
 copy_tree("./beta/mabiao/", "./dist/yujoy/mabiao/")
 copy_tree("./beta/schema/", "./dist/yujoy/schema/")

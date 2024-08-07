@@ -152,7 +152,7 @@ translator:
   dictionary: yujoy_fluency
   db_class: tabledb
   enable_completion: false
-  initial_quality: 4
+  initial_quality: 8
   # preedit_format:
   #   - "xlit|abcdefghijklmnopqrstuvwxyz|木舌下又也一竹土小日口子火水上生石十田金人食女足月查|"
 
@@ -165,7 +165,7 @@ yujoy:
   enable_encoder: false
   encode_commit_history: false # 对连续上屏的词自动成词
   max_phrase_length: 4 # 自动成词的最大词长
-  initial_quality: 8
+  initial_quality: 4
 
 pinyin:
   dictionary: yuhao_pinyin
